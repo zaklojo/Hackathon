@@ -1,1 +1,3 @@
 C:\Hackathon\LaTechnique\LaTechnique\bin\Debug\LaTechnique.exe.config
+C:\Hackathon\LaTeam\LaTechnique\LaTechnique\bin\Debug\LaTechnique.exe.config
+C:\LaTeam\LaTechnique\LaTechnique\bin\Debug\LaTechnique.exe.config
