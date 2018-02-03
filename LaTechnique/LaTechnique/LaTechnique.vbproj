@@ -72,6 +72,26 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commun\Constantes\constantes_allergies.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedants_allergies.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedants_bacteries.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedants_chirurgicaux.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedants_medicaments.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedants_medicaux.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedants_psychiatriques.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedants_vaccins.vb" />
+    <Compile Include="Commun\Constantes\constantes_bacteries.vb" />
+    <Compile Include="Commun\Constantes\constantes_chirurgies.vb" />
+    <Compile Include="Commun\Constantes\constantes_infos_supplementaires.vb" />
+    <Compile Include="Commun\Constantes\constantes_maladies.vb" />
+    <Compile Include="Commun\Constantes\constantes_maladies_mentales.vb" />
+    <Compile Include="Commun\Constantes\constantes_medicaments.vb" />
+    <Compile Include="Commun\Constantes\constantes_personnes.vb" />
+    <Compile Include="Commun\Constantes\constantes_pieces_jointes.vb" />
+    <Compile Include="Commun\Constantes\constantes_ressources.vb" />
+    <Compile Include="Commun\Constantes\constantes_telephones.vb" />
+    <Compile Include="Commun\Constantes\constantes_vaccins.vb" />
+    <Compile Include="Commun\Modules\FonctionsUtiles.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +116,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
