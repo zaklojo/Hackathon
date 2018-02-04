@@ -1,3 +1,0 @@
-﻿Module FonctionsUtiles
-
-End Module
