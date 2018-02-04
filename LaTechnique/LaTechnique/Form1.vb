@@ -8,11 +8,8 @@ Public Class Form1
     'Dim control_saisie As New controlSaisie
     Public control_visionnement As New controlVisionnement
     Public control_saisie As New controlSaisie
-<<<<<<< HEAD
-=======
 
     Public control_generationcode As New controlGenerationCodeBarre
->>>>>>> origin/Interfaces
 
 
     Dim access As New DataTest
@@ -29,13 +26,10 @@ Public Class Form1
         pControl.Controls.Add(control_visionnement)
         'pControl.Controls.Add(control_saisie)
         pControl.Controls.Add(control_saisie)
-<<<<<<< HEAD
 
         control_saisie.Visible = False
-=======
 
         pControl.Controls.Add(control_generationcode)
->>>>>>> origin/Interfaces
 
         'Fait afficher le controle de base
         control_visionnement.Dock = DockStyle.Fill
@@ -51,14 +45,21 @@ Public Class Form1
         'control_visionnement.Dock = DockStyle.Fill
         'control_visionnement.Visible = True
         'control_saisie.initialiser()
+<<<<<<< HEAD
+=======
+
+>>>>>>> cc626eb43399553a4c8b430ac67dc37e93cc49c0
         control_visionnement.Visible = False
         control_identif.Visible = True
         control_co.Visible = False
         control_co.Dock = DockStyle.Fill
+<<<<<<< HEAD
 
         control_identif.Visible = True
         control_identif.Dock = DockStyle.Fill
 
+=======
+>>>>>>> cc626eb43399553a4c8b430ac67dc37e93cc49c0
 
     End Sub
     Public Function identification()

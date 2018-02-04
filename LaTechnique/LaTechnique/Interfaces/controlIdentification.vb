@@ -3,17 +3,14 @@
         Form1.identification()
     End Sub
 
-<<<<<<< HEAD
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Form1.control_co.Visible = True
         Form1.control_co.Dock = DockStyle.Fill
         Me.Visible = False
-=======
     End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Visible = False
         Form1.control_generationcode.Dock = DockStyle.Fill
         Form1.control_generationcode.Visible = True
->>>>>>> origin/Interfaces
     End Sub
 End Class

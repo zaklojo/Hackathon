@@ -39,11 +39,6 @@ Partial Class controlIdentification
         Me.TableLayoutPanel1.AutoSize = True
         Me.TableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel1.ColumnCount = 5
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.14677!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.572474!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.15593!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.11294!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.011889!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.198752!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 87.60249!))
@@ -51,8 +46,6 @@ Partial Class controlIdentification
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.198752!))
         Me.TableLayoutPanel1.Controls.Add(Me.Button1, 3, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Button2, 3, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.txtNum, 2, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblValide, 2, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.txtNum, 2, 5)
         Me.TableLayoutPanel1.Controls.Add(Me.lblValide, 2, 6)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 2, 3)
@@ -61,16 +54,6 @@ Partial Class controlIdentification
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 8
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.71847!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.928154!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.22764!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333333!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.72358!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.928154!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1134, 612)
         Me.TableLayoutPanel1.RowCount = 9
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74.0!))
@@ -90,21 +73,20 @@ Partial Class controlIdentification
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(896, 3)
         Me.Button1.Location = New System.Drawing.Point(1211, 4)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(210, 54)
         Me.Button1.Size = New System.Drawing.Size(232, 66)
         Me.Button1.TabIndex = 1
+<<<<<<< HEAD
         Me.Button1.Text = "Se connecter"
 <<<<<<< HEAD
+=======
+>>>>>>> cc626eb43399553a4c8b430ac67dc37e93cc49c0
         Me.Button1.Text = "Se déconnecter"
         Me.Button1.UseVisualStyleBackColor = True
-=======
         Me.Button1.Text = "Se connecter"
         Me.Button1.UseVisualStyleBackColor = False
->>>>>>> origin/Interfaces
         '
         'Button2
         '
@@ -112,11 +94,11 @@ Partial Class controlIdentification
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(896, 63)
         Me.Button2.Location = New System.Drawing.Point(1211, 78)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(210, 54)
+        Me.Button2.Padding = New System.Windows.Forms.Padding(0, 12, 0, 0)
+        Me.Button2.Size = New System.Drawing.Size(232, 66)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Générer un code barre"
         Me.Button2.UseVisualStyleBackColor = False
@@ -128,11 +110,9 @@ Partial Class controlIdentification
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNum.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNum.Location = New System.Drawing.Point(248, 308)
         Me.txtNum.Location = New System.Drawing.Point(307, 286)
         Me.txtNum.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNum.Name = "txtNum"
-        Me.txtNum.Size = New System.Drawing.Size(642, 62)
         Me.txtNum.Size = New System.Drawing.Size(896, 75)
         Me.txtNum.TabIndex = 0
         Me.txtNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -144,11 +124,9 @@ Partial Class controlIdentification
         Me.lblValide.AutoSize = True
         Me.lblValide.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblValide.ForeColor = System.Drawing.Color.Red
-        Me.lblValide.Location = New System.Drawing.Point(248, 375)
         Me.lblValide.Location = New System.Drawing.Point(307, 367)
         Me.lblValide.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblValide.Name = "lblValide"
-        Me.lblValide.Size = New System.Drawing.Size(642, 39)
         Me.lblValide.Size = New System.Drawing.Size(896, 52)
         Me.lblValide.TabIndex = 3
         Me.lblValide.Text = "Invalide"
@@ -184,13 +162,11 @@ Partial Class controlIdentification
         '
         'controlIdentification
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "controlIdentification"
-        Me.Size = New System.Drawing.Size(1134, 612)
         Me.Size = New System.Drawing.Size(1512, 753)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
