@@ -95,17 +95,25 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commun\class objet\clsAllergis.vb" />
+    <Compile Include="Commun\class objet\clsAllergies.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsAllergies.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsBacteries.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsChirurgicaux.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsMedicaments.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsMedicaux.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsPsychiatriques.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsVaccins.vb" />
     <Compile Include="Commun\class objet\clsBDconnection.vb" />
     <Compile Include="Commun\class objet\clsObjet.vb" />
+    <Compile Include="Commun\Constantes\constantes_ajout_categories.vb" />
     <Compile Include="Commun\Constantes\constantes_allergies.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_allergies.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_bacteries.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_chirurgicaux.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_medicaments.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_medicaux.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_psychiatriques.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_vaccins.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_allergies.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_bacteries.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_chirurgicaux.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_medicaments.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_medicaux.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_psychiatriques.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_vaccins.vb" />
     <Compile Include="Commun\Constantes\constantes_bacteries.vb" />
     <Compile Include="Commun\Constantes\constantes_chirurgies.vb" />
     <Compile Include="Commun\Constantes\constantes_infos_supplementaires.vb" />
@@ -117,6 +125,7 @@
     <Compile Include="Commun\Constantes\constantes_ressources.vb" />
     <Compile Include="Commun\Constantes\constantes_telephones.vb" />
     <Compile Include="Commun\Constantes\constantes_vaccins.vb" />
+    <Compile Include="Commun\DataAcces\dataAccessObjet.vb" />
     <Compile Include="Commun\Modules\FonctionsUtiles.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

@@ -14,10 +14,7 @@ Public Class dataAccessObjet
 #End Region
 
 #Region "property"
-    ''' <summary>
-    ''' Retourne le dataSet
-    ''' Faite par Olivier Précourt
-    ''' </summary>
+
     Public ReadOnly Property ds As DataSet
         Get
             If v_ds Is Nothing Then v_ds = New DataSet
@@ -25,10 +22,6 @@ Public Class dataAccessObjet
         End Get
     End Property
 
-    ''' <summary>
-    ''' Retourne le data adapteur
-    ''' Faite par Olivier Précourt
-    ''' </summary>
     Public ReadOnly Property da As MySqlDataAdapter
         Get
             If v_da Is Nothing Then v_da = New MySqlDataAdapter
@@ -36,10 +29,6 @@ Public Class dataAccessObjet
         End Get
     End Property
 
-    ''' <summary>
-    ''' Affecte/retourne la base de donnée
-    ''' Faite par Olivier Précourt
-    ''' </summary>
     Public ReadOnly Property bd As clsBDconnection
         Get
             If v_bd Is Nothing Then v_bd = New clsBDconnection
@@ -47,10 +36,6 @@ Public Class dataAccessObjet
         End Get
     End Property
 
-    ''' <summary>
-    ''' Affecte/retourne la requête
-    ''' Faite par Olivier Précourt
-    ''' </summary>
     Protected Property requete As String
         Get
             Return v_requete
