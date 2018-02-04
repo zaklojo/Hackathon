@@ -24,6 +24,13 @@ Partial Class controlSaisie
     Private Sub InitializeComponent()
         Dim Label14 As System.Windows.Forms.Label
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.grpVaccins = New System.Windows.Forms.GroupBox()
+        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
+        Me.cboVaccins = New System.Windows.Forms.ComboBox()
+        Me.lstVaccins = New System.Windows.Forms.ListView()
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.btnSupprimerVaccin = New System.Windows.Forms.Button()
+        Me.btnAjouterVaccin = New System.Windows.Forms.Button()
         Me.grpRessources = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -50,7 +57,6 @@ Partial Class controlSaisie
         Me.btnAjouterPsychiatriques = New System.Windows.Forms.Button()
         Me.txtTaille = New System.Windows.Forms.TextBox()
         Me.txtPoids = New System.Windows.Forms.TextBox()
-        Me.dtpDateMaj = New System.Windows.Forms.DateTimePicker()
         Me.txtPrenom = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -61,7 +67,6 @@ Partial Class controlSaisie
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.lblInfosSupp = New System.Windows.Forms.Label()
-        Me.Label = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -129,15 +134,11 @@ Partial Class controlSaisie
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.btnSupprimerMedicaments = New System.Windows.Forms.Button()
         Me.btnAjouterMedicaments = New System.Windows.Forms.Button()
-        Me.grpVaccins = New System.Windows.Forms.GroupBox()
-        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.cboVaccins = New System.Windows.Forms.ComboBox()
-        Me.lstVaccins = New System.Windows.Forms.ListView()
-        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.btnSupprimerVaccin = New System.Windows.Forms.Button()
-        Me.btnAjouterVaccin = New System.Windows.Forms.Button()
+        Me.btnEnregistrer = New System.Windows.Forms.Button()
         Label14 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.grpVaccins.SuspendLayout()
+        Me.TableLayoutPanel8.SuspendLayout()
         Me.grpRessources.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         Me.grpAntecedentsPsychiatriques.SuspendLayout()
@@ -151,8 +152,6 @@ Partial Class controlSaisie
         Me.TableLayoutPanel4.SuspendLayout()
         Me.grpMedicaments.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
-        Me.grpVaccins.SuspendLayout()
-        Me.TableLayoutPanel8.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label14
@@ -200,7 +199,6 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.Controls.Add(Me.grpAntecedentsPsychiatriques, 1, 15)
         Me.TableLayoutPanel1.Controls.Add(Me.txtTaille, 3, 10)
         Me.TableLayoutPanel1.Controls.Add(Me.txtPoids, 2, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.dtpDateMaj, 11, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.txtPrenom, 5, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.Label21, 1, 42)
         Me.TableLayoutPanel1.Controls.Add(Me.Label20, 1, 40)
@@ -212,7 +210,6 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.Controls.Add(Label14, 1, 28)
         Me.TableLayoutPanel1.Controls.Add(Me.Label13, 1, 26)
         Me.TableLayoutPanel1.Controls.Add(Me.lblInfosSupp, 1, 24)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label, 11, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label12, 1, 22)
         Me.TableLayoutPanel1.Controls.Add(Me.Button1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label5, 1, 5)
@@ -256,6 +253,8 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.Controls.Add(Me.lblAideTechnique, 10, 34)
         Me.TableLayoutPanel1.Controls.Add(Me.txtAideTechnique, 11, 34)
         Me.TableLayoutPanel1.Controls.Add(Me.grpMedicaments, 9, 45)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnEnregistrer, 6, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -319,8 +318,108 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1357, 2596)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1361, 2600)
         Me.TableLayoutPanel1.TabIndex = 1
+        '
+        'grpVaccins
+        '
+        Me.grpVaccins.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpVaccins.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.grpVaccins, 11)
+        Me.grpVaccins.Controls.Add(Me.TableLayoutPanel8)
+        Me.grpVaccins.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpVaccins.Location = New System.Drawing.Point(733, 2421)
+        Me.grpVaccins.Margin = New System.Windows.Forms.Padding(4)
+        Me.grpVaccins.Name = "grpVaccins"
+        Me.grpVaccins.Padding = New System.Windows.Forms.Padding(4)
+        Me.TableLayoutPanel1.SetRowSpan(Me.grpVaccins, 5)
+        Me.grpVaccins.Size = New System.Drawing.Size(551, 175)
+        Me.grpVaccins.TabIndex = 167
+        Me.grpVaccins.TabStop = False
+        Me.grpVaccins.Text = "Vaccins"
+        '
+        'TableLayoutPanel8
+        '
+        Me.TableLayoutPanel8.AutoSize = True
+        Me.TableLayoutPanel8.ColumnCount = 4
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.75796!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.18093!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.74478!))
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.74318!))
+        Me.TableLayoutPanel8.Controls.Add(Me.cboVaccins, 0, 0)
+        Me.TableLayoutPanel8.Controls.Add(Me.lstVaccins, 0, 2)
+        Me.TableLayoutPanel8.Controls.Add(Me.btnSupprimerVaccin, 3, 1)
+        Me.TableLayoutPanel8.Controls.Add(Me.btnAjouterVaccin, 2, 1)
+        Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(4, 23)
+        Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(4)
+        Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
+        Me.TableLayoutPanel8.RowCount = 3
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(543, 148)
+        Me.TableLayoutPanel8.TabIndex = 65
+        '
+        'cboVaccins
+        '
+        Me.cboVaccins.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel8.SetColumnSpan(Me.cboVaccins, 4)
+        Me.cboVaccins.FormattingEnabled = True
+        Me.cboVaccins.Location = New System.Drawing.Point(4, 4)
+        Me.cboVaccins.Margin = New System.Windows.Forms.Padding(4)
+        Me.cboVaccins.MaxLength = 50
+        Me.cboVaccins.Name = "cboVaccins"
+        Me.cboVaccins.Size = New System.Drawing.Size(535, 28)
+        Me.cboVaccins.TabIndex = 11
+        '
+        'lstVaccins
+        '
+        Me.lstVaccins.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader10})
+        Me.TableLayoutPanel8.SetColumnSpan(Me.lstVaccins, 4)
+        Me.lstVaccins.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lstVaccins.FullRowSelect = True
+        Me.lstVaccins.Location = New System.Drawing.Point(4, 76)
+        Me.lstVaccins.Margin = New System.Windows.Forms.Padding(4)
+        Me.lstVaccins.MultiSelect = False
+        Me.lstVaccins.Name = "lstVaccins"
+        Me.lstVaccins.Size = New System.Drawing.Size(535, 170)
+        Me.lstVaccins.TabIndex = 62
+        Me.lstVaccins.UseCompatibleStateImageBehavior = False
+        Me.lstVaccins.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Vaccin"
+        Me.ColumnHeader10.Width = 529
+        '
+        'btnSupprimerVaccin
+        '
+        Me.btnSupprimerVaccin.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnSupprimerVaccin.Enabled = False
+        Me.btnSupprimerVaccin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSupprimerVaccin.Location = New System.Drawing.Point(439, 40)
+        Me.btnSupprimerVaccin.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSupprimerVaccin.Name = "btnSupprimerVaccin"
+        Me.btnSupprimerVaccin.Size = New System.Drawing.Size(100, 28)
+        Me.btnSupprimerVaccin.TabIndex = 63
+        Me.btnSupprimerVaccin.Text = "Supprimer"
+        Me.btnSupprimerVaccin.UseVisualStyleBackColor = False
+        '
+        'btnAjouterVaccin
+        '
+        Me.btnAjouterVaccin.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.btnAjouterVaccin.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnAjouterVaccin.Enabled = False
+        Me.btnAjouterVaccin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnAjouterVaccin.Location = New System.Drawing.Point(322, 40)
+        Me.btnAjouterVaccin.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAjouterVaccin.Name = "btnAjouterVaccin"
+        Me.btnAjouterVaccin.Size = New System.Drawing.Size(109, 28)
+        Me.btnAjouterVaccin.TabIndex = 61
+        Me.btnAjouterVaccin.Text = "Ajouter"
+        Me.btnAjouterVaccin.UseVisualStyleBackColor = False
         '
         'grpRessources
         '
@@ -547,9 +646,7 @@ Partial Class controlSaisie
         '
         Me.cboMaladiesMentales.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel3.SetColumnSpan(Me.cboMaladiesMentales, 4)
-        Me.cboMaladiesMentales.Enabled = False
         Me.cboMaladiesMentales.FormattingEnabled = True
-        Me.cboMaladiesMentales.Items.AddRange(New Object() {"Maison", "Cellulaire", "Bureau"})
         Me.cboMaladiesMentales.Location = New System.Drawing.Point(4, 4)
         Me.cboMaladiesMentales.Margin = New System.Windows.Forms.Padding(4)
         Me.cboMaladiesMentales.MaxLength = 50
@@ -619,15 +716,6 @@ Partial Class controlSaisie
         Me.txtPoids.Name = "txtPoids"
         Me.txtPoids.Size = New System.Drawing.Size(72, 38)
         Me.txtPoids.TabIndex = 60
-        '
-        'dtpDateMaj
-        '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.dtpDateMaj, 8)
-        Me.dtpDateMaj.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpDateMaj.Location = New System.Drawing.Point(962, 89)
-        Me.dtpDateMaj.Name = "dtpDateMaj"
-        Me.dtpDateMaj.Size = New System.Drawing.Size(306, 38)
-        Me.dtpDateMaj.TabIndex = 57
         '
         'txtPrenom
         '
@@ -763,19 +851,6 @@ Partial Class controlSaisie
         Me.lblInfosSupp.TabIndex = 28
         Me.lblInfosSupp.Text = "Troubles du comportement : ....................................."
         Me.lblInfosSupp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label
-        '
-        Me.Label.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.Label, 10)
-        Me.Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label.Location = New System.Drawing.Point(963, 43)
-        Me.Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(359, 31)
-        Me.Label.TabIndex = 26
-        Me.Label.Text = "Date de denière mise à jour :"
-        Me.Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label12
         '
@@ -936,6 +1011,7 @@ Partial Class controlSaisie
         'txtDossierHopital
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtDossierHopital, 3)
+        Me.txtDossierHopital.Enabled = False
         Me.txtDossierHopital.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDossierHopital.Location = New System.Drawing.Point(348, 399)
         Me.txtDossierHopital.Name = "txtDossierHopital"
@@ -1057,9 +1133,7 @@ Partial Class controlSaisie
         '
         Me.cboMaladies.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel7.SetColumnSpan(Me.cboMaladies, 4)
-        Me.cboMaladies.Enabled = False
         Me.cboMaladies.FormattingEnabled = True
-        Me.cboMaladies.Items.AddRange(New Object() {"Maison", "Cellulaire", "Bureau"})
         Me.cboMaladies.Location = New System.Drawing.Point(4, 4)
         Me.cboMaladies.Margin = New System.Windows.Forms.Padding(4)
         Me.cboMaladies.MaxLength = 50
@@ -1269,9 +1343,7 @@ Partial Class controlSaisie
         '
         Me.cboChirurgicaux.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel2.SetColumnSpan(Me.cboChirurgicaux, 4)
-        Me.cboChirurgicaux.Enabled = False
         Me.cboChirurgicaux.FormattingEnabled = True
-        Me.cboChirurgicaux.Items.AddRange(New Object() {"Maison", "Cellulaire", "Bureau"})
         Me.cboChirurgicaux.Location = New System.Drawing.Point(4, 4)
         Me.cboChirurgicaux.Margin = New System.Windows.Forms.Padding(4)
         Me.cboChirurgicaux.MaxLength = 50
@@ -1371,9 +1443,7 @@ Partial Class controlSaisie
         '
         Me.cboAllergies.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel4.SetColumnSpan(Me.cboAllergies, 4)
-        Me.cboAllergies.Enabled = False
         Me.cboAllergies.FormattingEnabled = True
-        Me.cboAllergies.Items.AddRange(New Object() {"Maison", "Cellulaire", "Bureau"})
         Me.cboAllergies.Location = New System.Drawing.Point(4, 4)
         Me.cboAllergies.Margin = New System.Windows.Forms.Padding(4)
         Me.cboAllergies.MaxLength = 50
@@ -1565,9 +1635,7 @@ Partial Class controlSaisie
         '
         Me.cboMedicaments.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel6.SetColumnSpan(Me.cboMedicaments, 4)
-        Me.cboMedicaments.Enabled = False
         Me.cboMedicaments.FormattingEnabled = True
-        Me.cboMedicaments.Items.AddRange(New Object() {"Maison", "Cellulaire", "Bureau"})
         Me.cboMedicaments.Location = New System.Drawing.Point(4, 4)
         Me.cboMedicaments.Margin = New System.Windows.Forms.Padding(4)
         Me.cboMedicaments.MaxLength = 50
@@ -1622,107 +1690,17 @@ Partial Class controlSaisie
         Me.btnAjouterMedicaments.Text = "Ajouter"
         Me.btnAjouterMedicaments.UseVisualStyleBackColor = False
         '
-        'grpVaccins
+        'btnEnregistrer
         '
-        Me.grpVaccins.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.grpVaccins.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.grpVaccins, 11)
-        Me.grpVaccins.Controls.Add(Me.TableLayoutPanel8)
-        Me.grpVaccins.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpVaccins.Location = New System.Drawing.Point(733, 2421)
-        Me.grpVaccins.Margin = New System.Windows.Forms.Padding(4)
-        Me.grpVaccins.Name = "grpVaccins"
-        Me.grpVaccins.Padding = New System.Windows.Forms.Padding(4)
-        Me.TableLayoutPanel1.SetRowSpan(Me.grpVaccins, 5)
-        Me.grpVaccins.Size = New System.Drawing.Size(551, 277)
-        Me.grpVaccins.TabIndex = 167
-        Me.grpVaccins.TabStop = False
-        Me.grpVaccins.Text = "Vaccins"
-        '
-        'TableLayoutPanel8
-        '
-        Me.TableLayoutPanel8.AutoSize = True
-        Me.TableLayoutPanel8.ColumnCount = 4
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.75796!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.18093!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.74478!))
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.74318!))
-        Me.TableLayoutPanel8.Controls.Add(Me.cboVaccins, 0, 0)
-        Me.TableLayoutPanel8.Controls.Add(Me.lstVaccins, 0, 2)
-        Me.TableLayoutPanel8.Controls.Add(Me.btnSupprimerVaccin, 3, 1)
-        Me.TableLayoutPanel8.Controls.Add(Me.btnAjouterVaccin, 2, 1)
-        Me.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(4, 23)
-        Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(4)
-        Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
-        Me.TableLayoutPanel8.RowCount = 3
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(543, 250)
-        Me.TableLayoutPanel8.TabIndex = 65
-        '
-        'cboVaccins
-        '
-        Me.cboVaccins.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel8.SetColumnSpan(Me.cboVaccins, 4)
-        Me.cboVaccins.Enabled = False
-        Me.cboVaccins.FormattingEnabled = True
-        Me.cboVaccins.Items.AddRange(New Object() {"Maison", "Cellulaire", "Bureau"})
-        Me.cboVaccins.Location = New System.Drawing.Point(4, 4)
-        Me.cboVaccins.Margin = New System.Windows.Forms.Padding(4)
-        Me.cboVaccins.MaxLength = 50
-        Me.cboVaccins.Name = "cboVaccins"
-        Me.cboVaccins.Size = New System.Drawing.Size(535, 28)
-        Me.cboVaccins.TabIndex = 11
-        '
-        'lstVaccins
-        '
-        Me.lstVaccins.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader10})
-        Me.TableLayoutPanel8.SetColumnSpan(Me.lstVaccins, 4)
-        Me.lstVaccins.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lstVaccins.FullRowSelect = True
-        Me.lstVaccins.Location = New System.Drawing.Point(4, 76)
-        Me.lstVaccins.Margin = New System.Windows.Forms.Padding(4)
-        Me.lstVaccins.MultiSelect = False
-        Me.lstVaccins.Name = "lstVaccins"
-        Me.lstVaccins.Size = New System.Drawing.Size(535, 170)
-        Me.lstVaccins.TabIndex = 62
-        Me.lstVaccins.UseCompatibleStateImageBehavior = False
-        Me.lstVaccins.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.Text = "Vaccin"
-        Me.ColumnHeader10.Width = 529
-        '
-        'btnSupprimerVaccin
-        '
-        Me.btnSupprimerVaccin.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btnSupprimerVaccin.Enabled = False
-        Me.btnSupprimerVaccin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSupprimerVaccin.Location = New System.Drawing.Point(439, 40)
-        Me.btnSupprimerVaccin.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSupprimerVaccin.Name = "btnSupprimerVaccin"
-        Me.btnSupprimerVaccin.Size = New System.Drawing.Size(100, 28)
-        Me.btnSupprimerVaccin.TabIndex = 63
-        Me.btnSupprimerVaccin.Text = "Supprimer"
-        Me.btnSupprimerVaccin.UseVisualStyleBackColor = False
-        '
-        'btnAjouterVaccin
-        '
-        Me.btnAjouterVaccin.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.btnAjouterVaccin.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btnAjouterVaccin.Enabled = False
-        Me.btnAjouterVaccin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnAjouterVaccin.Location = New System.Drawing.Point(322, 40)
-        Me.btnAjouterVaccin.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnAjouterVaccin.Name = "btnAjouterVaccin"
-        Me.btnAjouterVaccin.Size = New System.Drawing.Size(109, 28)
-        Me.btnAjouterVaccin.TabIndex = 61
-        Me.btnAjouterVaccin.Text = "Ajouter"
-        Me.btnAjouterVaccin.UseVisualStyleBackColor = False
+        Me.TableLayoutPanel1.SetColumnSpan(Me.btnEnregistrer, 2)
+        Me.btnEnregistrer.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEnregistrer.Location = New System.Drawing.Point(455, 3)
+        Me.btnEnregistrer.Name = "btnEnregistrer"
+        Me.TableLayoutPanel1.SetRowSpan(Me.btnEnregistrer, 2)
+        Me.btnEnregistrer.Size = New System.Drawing.Size(197, 80)
+        Me.btnEnregistrer.TabIndex = 168
+        Me.btnEnregistrer.Text = "Enregistrer"
+        Me.btnEnregistrer.UseVisualStyleBackColor = True
         '
         'controlSaisie
         '
@@ -1733,6 +1711,9 @@ Partial Class controlSaisie
         Me.Size = New System.Drawing.Size(1361, 2600)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        Me.grpVaccins.ResumeLayout(False)
+        Me.grpVaccins.PerformLayout()
+        Me.TableLayoutPanel8.ResumeLayout(False)
         Me.grpRessources.ResumeLayout(False)
         Me.grpRessources.PerformLayout()
         Me.TableLayoutPanel5.ResumeLayout(False)
@@ -1753,9 +1734,6 @@ Partial Class controlSaisie
         Me.grpMedicaments.ResumeLayout(False)
         Me.grpMedicaments.PerformLayout()
         Me.TableLayoutPanel6.ResumeLayout(False)
-        Me.grpVaccins.ResumeLayout(False)
-        Me.grpVaccins.PerformLayout()
-        Me.TableLayoutPanel8.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1770,7 +1748,6 @@ Partial Class controlSaisie
     Friend WithEvents Label15 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents lblInfosSupp As Label
-    Friend WithEvents Label As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents lblTaille As Label
     Friend WithEvents lblPoids As Label
@@ -1788,7 +1765,6 @@ Partial Class controlSaisie
     Friend WithEvents txtAssuranceMaladie As TextBox
     Friend WithEvents txtTaille As TextBox
     Friend WithEvents txtPoids As TextBox
-    Friend WithEvents dtpDateMaj As DateTimePicker
     Friend WithEvents dtpDateNaissance As DateTimePicker
     Friend WithEvents txtDossierHopital As TextBox
     Friend WithEvents btnAjouterPhoto As Button
@@ -1873,4 +1849,5 @@ Partial Class controlSaisie
     Friend WithEvents ColumnHeader10 As ColumnHeader
     Friend WithEvents btnSupprimerVaccin As Button
     Friend WithEvents btnAjouterVaccin As Button
+    Friend WithEvents btnEnregistrer As Button
 End Class
