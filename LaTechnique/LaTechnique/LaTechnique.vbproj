@@ -95,6 +95,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commun\class objet\clsAjoutCategories.vb" />
     <Compile Include="Commun\class objet\clsAllergies.vb" />
     <Compile Include="Commun\class objet\clsAntecedentsAllergies.vb" />
     <Compile Include="Commun\class objet\clsAntecedentsBacteries.vb" />
@@ -103,8 +104,19 @@
     <Compile Include="Commun\class objet\clsAntecedentsMedicaux.vb" />
     <Compile Include="Commun\class objet\clsAntecedentsPsychiatriques.vb" />
     <Compile Include="Commun\class objet\clsAntecedentsVaccins.vb" />
+    <Compile Include="Commun\class objet\clsBacteries.vb" />
     <Compile Include="Commun\class objet\clsBDconnection.vb" />
+    <Compile Include="Commun\class objet\clsChirurgies.vb" />
+    <Compile Include="Commun\class objet\clsInfosSupplementaires.vb" />
+    <Compile Include="Commun\class objet\clsMaladieMentales.vb" />
+    <Compile Include="Commun\class objet\clsMaladies.vb" />
+    <Compile Include="Commun\class objet\clsMedicaments.vb" />
     <Compile Include="Commun\class objet\clsObjet.vb" />
+    <Compile Include="Commun\class objet\clsPersonne.vb" />
+    <Compile Include="Commun\class objet\clsPiecesJointes.vb" />
+    <Compile Include="Commun\class objet\clsRessource.vb" />
+    <Compile Include="Commun\class objet\clsTelephones.vb" />
+    <Compile Include="Commun\class objet\clsVaccins.vb" />
     <Compile Include="Commun\Constantes\constantes_ajout_categories.vb" />
     <Compile Include="Commun\Constantes\constantes_allergies.vb" />
     <Compile Include="Commun\Constantes\constantes_antecedents_allergies.vb" />

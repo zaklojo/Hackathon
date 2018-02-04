@@ -2,7 +2,7 @@
 
     'Variables
     Private v_id_allergie As Integer
-    Private v_nom_allergie As Integer
+    Private v_nom_allergie As String
 
     'Propriétés
     Public Property id_allergie As Integer
@@ -14,11 +14,11 @@
         End Set
     End Property
 
-    Public Property nom_allergie As Integer
+    Public Property nom_allergie As String
         Get
             Return v_nom_allergie
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As String)
             v_nom_allergie = value
         End Set
     End Property

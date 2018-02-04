@@ -1,9 +1,9 @@
-﻿Public Class clsAntecedentsVaccins
+﻿Public Class clsMaladies
 
 
     'Variables
     Private v_id_vaccin As Integer
-    Private v_assurance_maladie As Integer
+    Private v_assurance_maladie As String
 
     'Propriétés
     Public Property id_vaccin As Integer
@@ -15,11 +15,11 @@
         End Set
     End Property
 
-    Public Property assurance_maladie As Integer
+    Public Property assurance_maladie As String
         Get
             Return v_assurance_maladie
         End Get
-        Set(ByVal value As Integer)
+        Set(ByVal value As String)
             v_assurance_maladie = value
         End Set
     End Property

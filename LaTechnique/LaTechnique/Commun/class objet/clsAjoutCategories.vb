@@ -5,7 +5,6 @@
     Private v_categorie As Integer
     Private v_assurance_maladie As String
     Private v_description As String
-
     'Propriétés
     Public Property categorie As Integer
         Get
