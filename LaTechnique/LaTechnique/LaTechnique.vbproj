@@ -47,10 +47,33 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.11\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.11\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -72,14 +95,25 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commun\class objet\clsAllergies.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsAllergies.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsBacteries.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsChirurgicaux.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsMedicaments.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsMedicaux.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsPsychiatriques.vb" />
+    <Compile Include="Commun\class objet\clsAntecedentsVaccins.vb" />
+    <Compile Include="Commun\class objet\clsBDconnection.vb" />
+    <Compile Include="Commun\class objet\clsObjet.vb" />
+    <Compile Include="Commun\Constantes\constantes_ajout_categories.vb" />
     <Compile Include="Commun\Constantes\constantes_allergies.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_allergies.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_bacteries.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_chirurgicaux.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_medicaments.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_medicaux.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_psychiatriques.vb" />
-    <Compile Include="Commun\Constantes\constantes_antecedants_vaccins.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_allergies.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_bacteries.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_chirurgicaux.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_medicaments.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_medicaux.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_psychiatriques.vb" />
+    <Compile Include="Commun\Constantes\constantes_antecedents_vaccins.vb" />
     <Compile Include="Commun\Constantes\constantes_bacteries.vb" />
     <Compile Include="Commun\Constantes\constantes_chirurgies.vb" />
     <Compile Include="Commun\Constantes\constantes_infos_supplementaires.vb" />
@@ -91,6 +125,7 @@
     <Compile Include="Commun\Constantes\constantes_ressources.vb" />
     <Compile Include="Commun\Constantes\constantes_telephones.vb" />
     <Compile Include="Commun\Constantes\constantes_vaccins.vb" />
+    <Compile Include="Commun\DataAcces\dataAccessObjet.vb" />
     <Compile Include="Commun\Modules\FonctionsUtiles.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -137,6 +172,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
