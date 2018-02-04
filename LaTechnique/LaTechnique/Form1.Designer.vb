@@ -31,7 +31,7 @@ Partial Class Form1
         Me.pControl.AutoSize = True
         Me.pControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pControl.Location = New System.Drawing.Point(0, 0)
-        Me.pControl.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pControl.Margin = New System.Windows.Forms.Padding(4)
         Me.pControl.Name = "pControl"
         Me.pControl.Size = New System.Drawing.Size(1541, 778)
         Me.pControl.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1541, 778)
         Me.Controls.Add(Me.pControl)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.Text = "La technique - Application"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
