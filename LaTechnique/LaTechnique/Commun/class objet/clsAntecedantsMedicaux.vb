@@ -1,17 +1,17 @@
-﻿Public Class clsAntecedantsChirurgicaux
+﻿Public Class clsAntecedantsMedicaux
 
 
     'Variables
-    Private v_id_allergie As Integer
-    Private v_assurance_maladie As Integer
+    Private v_id_medicaux As Integer
+    Private v_assurance_maladie As String
 
     'Propriétés
-    Public Property id_allergie As Integer
+    Public Property id_medicaux As Integer
         Get
-            Return v_id_allergie
+            Return v_id_medicaux
         End Get
         Set(ByVal value As Integer)
-            v_id_allergie = value
+            v_id_medicaux = value
         End Set
     End Property
 
@@ -27,8 +27,8 @@
     'Mapping
     Public Overloads Sub mapping(ByVal dataAccess As dataAccessObjet, ligne As Integer)
         With dataAccess.ds
-            id_allergie = verifierColonneDataSet(.Tables(0), ligne, constantes_antecedants_chirurgicaux.STR_ID_ANTECEDANTS_CHIRURGICAUX)
-            assurance_maladie = verifierColonneDataSet(.Tables(0), ligne, constantes_antecedants_chirurgicaux.STR_ASSURANCE_MALADIE)
+            id_medicaux = verifierColonneDataSet(.Tables(0), ligne, constantes_antecedants_medicaux.STR_ID_ANTECEDANTS_MEDICAUX)
+            assurance_maladie = verifierColonneDataSet(.Tables(0), ligne, constantes_antecedants_medicaux.STR_ASSURANCE_MALADIE)
         End With
     End Sub
 

@@ -1,9 +1,9 @@
-﻿Public Class clsAllergis
+﻿Public Class clsAntecedantsAllergies
 
 
     'Variables
     Private v_id_allergie As Integer
-    Private v_assurance_maladie As Integer
+    Private v_assurance_maladie As String
 
     'Propriétés
     Public Property id_allergie As Integer
