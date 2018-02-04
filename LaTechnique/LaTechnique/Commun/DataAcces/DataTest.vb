@@ -41,6 +41,12 @@
         bd.Requete($"select * from {constantes_infos_supplementaires.STR_TABLE} where {constantes_infos_supplementaires.STR_ASSURANCE_MALADIE} = '{am}'", ds, da, constantes_infos_supplementaires.STR_TABLE)
     End Sub
 
+<<<<<<< HEAD
+
+
+    Public Sub connexion(ByVal co As clsConnexion)
+        bd.Requete($"select {constantes_connexion.STR_TYPE} from {constantes_connexion.STR_TABLE} where {constantes_connexion.STR_NOM_UTILISATEUR} = '{co.nom_utilisateur}' and {constantes_connexion.STR_MDP} = '{co.mdp}'", ds, da, constantes_infos_supplementaires.STR_TABLE)
+=======
     Public Sub ressources(ByVal am As String)
         bd.Requete($"select * from {constantes_ressources.STR_TABLE} where {constantes_ressources.STR_ASSURANCE_MALADIE} = '{am}'", ds, da, constantes_ressources.STR_TABLE)
     End Sub
@@ -53,5 +59,6 @@
     End Sub
     Public Sub insertPersonne(ByVal personne As clsPersonne)
         bd.Requete($"insert into {constantes_personnes.STR_TABLE} values ('{personne.assurance_maladie}', '{personne.nom}', '{personne.prenom}', '{personne.date_naissance}', '{personne.dossier_hopital}', '{personne.medecin_famille}', '{personne.medecin_specialiste}', '{personne.pharmacie}', {personne.poids}, '{personne.date_pesee}', {personne.taille}, {personne.reanimation}, null, null)", ds, da, constantes_personnes.STR_TABLE)
+>>>>>>> origin/Interfaces
     End Sub
 End Class

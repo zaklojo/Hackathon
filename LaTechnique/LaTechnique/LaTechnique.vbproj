@@ -107,6 +107,7 @@
     <Compile Include="Commun\class objet\clsBacteries.vb" />
     <Compile Include="Commun\class objet\clsBDconnection.vb" />
     <Compile Include="Commun\class objet\clsChirurgies.vb" />
+    <Compile Include="Commun\class objet\clsConnexion.vb" />
     <Compile Include="Commun\class objet\clsInfosSupplementaires.vb" />
     <Compile Include="Commun\class objet\clsMaladieMentales.vb" />
     <Compile Include="Commun\class objet\clsMaladies.vb" />
@@ -128,6 +129,7 @@
     <Compile Include="Commun\Constantes\constantes_antecedents_vaccins.vb" />
     <Compile Include="Commun\Constantes\constantes_bacteries.vb" />
     <Compile Include="Commun\Constantes\constantes_chirurgies.vb" />
+    <Compile Include="Commun\Constantes\constantes_connexion.vb" />
     <Compile Include="Commun\Constantes\constantes_infos_supplementaires.vb" />
     <Compile Include="Commun\Constantes\constantes_maladies.vb" />
     <Compile Include="Commun\Constantes\constantes_maladies_mentales.vb" />
@@ -147,6 +149,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaces\controlconnexion.Designer.vb">
+      <DependentUpon>controlconnexion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\controlconnexion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Interfaces\controlGenerationCodeBarre.Designer.vb">
       <DependentUpon>controlGenerationCodeBarre.vb</DependentUpon>
     </Compile>
@@ -157,6 +165,12 @@
       <DependentUpon>controlIdentification.vb</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\controlIdentification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\controlSaisie.Designer.vb">
+      <DependentUpon>controlSaisie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\controlSaisie.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Interfaces\controlVisionnement.Designer.vb">
@@ -185,11 +199,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\controlconnexion.resx">
+      <DependentUpon>controlconnexion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\controlGenerationCodeBarre.resx">
       <DependentUpon>controlGenerationCodeBarre.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\controlIdentification.resx">
       <DependentUpon>controlIdentification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\controlSaisie.resx">
+      <DependentUpon>controlSaisie.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\controlVisionnement.resx">
       <DependentUpon>controlVisionnement.vb</DependentUpon>
