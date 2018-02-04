@@ -105,6 +105,11 @@
     <Compile Include="Commun\class objet\clsAntecedentsVaccins.vb" />
     <Compile Include="Commun\class objet\clsBDconnection.vb" />
     <Compile Include="Commun\class objet\clsObjet.vb" />
+    <Compile Include="Commun\class objet\clsPersonne.vb" />
+    <Compile Include="Commun\class objet\clsRessource.vb" />
+    <Compile Include="Commun\class objet\clsTelephones.vb" />
+    <Compile Include="Commun\class objet\clsVaccins.vb" />
+    <Compile Include="Commun\class objet\clsPiecesJointes.vb" />
     <Compile Include="Commun\Constantes\constantes_ajout_categories.vb" />
     <Compile Include="Commun\Constantes\constantes_allergies.vb" />
     <Compile Include="Commun\Constantes\constantes_antecedents_allergies.vb" />
