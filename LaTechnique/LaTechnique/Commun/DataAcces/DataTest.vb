@@ -41,4 +41,13 @@
         bd.Requete($"select * from {constantes_infos_supplementaires.STR_TABLE} where {constantes_infos_supplementaires.STR_ASSURANCE_MALADIE} = '{am}'", ds, da, constantes_infos_supplementaires.STR_TABLE)
     End Sub
 
+    Public Sub allergieAll()
+        bd.Requete($"select * from {constantes_allergies.STR_TABLE}`", ds, da, constantes_allergies.STR_TABLE)
+    End Sub
+    Public Sub allergiAll()
+        bd.Requete($"select * from {constantes_allergies.STR_TABLE}`", ds, da, constantes_allergies.STR_TABLE)
+    End Sub
+    Public Sub insertPersonne(ByVal personne As clsPersonne)
+        bd.Requete($"insert into {constantes_personnes.STR_TABLE} values ('{personne.assurance_maladie}', '{personne.nom}', '{personne.prenom}', '{personne.date_naissance}', '{personne.dossier_hopital}', '{personne.medecin_famille}', '{personne.medecin_specialiste}', '{personne.pharmacie}', {personne.poids}, '{personne.date_pesee}', {personne.taille}, {personne.reanimation}, null, null)", ds, da, constantes_personnes.STR_TABLE)
+    End Sub
 End Class
