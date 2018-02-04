@@ -63,7 +63,7 @@ Partial Class controlIdentification
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNum.Location = New System.Drawing.Point(248, 284)
+        Me.txtNum.Location = New System.Drawing.Point(248, 342)
         Me.txtNum.Name = "txtNum"
         Me.txtNum.Size = New System.Drawing.Size(642, 35)
         Me.txtNum.TabIndex = 0
@@ -73,7 +73,7 @@ Partial Class controlIdentification
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button1.Location = New System.Drawing.Point(896, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(210, 28)
+        Me.Button1.Size = New System.Drawing.Size(210, 54)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -81,9 +81,9 @@ Partial Class controlIdentification
         'Button2
         '
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button2.Location = New System.Drawing.Point(896, 37)
+        Me.Button2.Location = New System.Drawing.Point(896, 63)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(210, 19)
+        Me.Button2.Size = New System.Drawing.Size(210, 54)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True

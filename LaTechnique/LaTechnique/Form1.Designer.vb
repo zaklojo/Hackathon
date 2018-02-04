@@ -29,18 +29,18 @@ Partial Class Form1
         '
         Me.pControl.AutoSize = True
         Me.pControl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pControl.Location = New System.Drawing.Point(12, 12)
+        Me.pControl.Location = New System.Drawing.Point(0, 0)
         Me.pControl.Name = "pControl"
-        Me.pControl.Size = New System.Drawing.Size(200, 100)
+        Me.pControl.Size = New System.Drawing.Size(1156, 632)
         Me.pControl.TabIndex = 0
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(1156, 632)
         Me.Controls.Add(Me.pControl)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Form1"
         Me.Text = "La technique - Application"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
