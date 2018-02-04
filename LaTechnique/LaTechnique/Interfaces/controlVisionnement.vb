@@ -4,4 +4,5 @@
         Me.Visible = False
         Form1.menu()
     End Sub
+
 End Class

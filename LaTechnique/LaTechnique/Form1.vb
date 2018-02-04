@@ -5,8 +5,9 @@ Public Class Form1
     Public control_identif As New controlIdentification
     Dim control_visionnement As New controlVisionnement
 
-    Dim test As New DataTest
+    Dim access As New DataTest
     Dim clsPers As New clsPersonne
+    Dim bool As Boolean
 
     'Code regex pour vérifier que le code scanné était bien un numéro d'assurance maladie
     Dim assMaladie As Regex = New Regex("[A-z]{4}\d{8}")
@@ -24,19 +25,32 @@ Public Class Form1
         'control_visionnement.Dock = DockStyle.Fill
         'control_visionnement.Visible = True
 
-        test.test()
 
-        'For ctr = 0 To 1
-        '    clsPers.mapping(test, ctr)
-        '    MsgBox(clsPers.assurance_maladie)
-        'Next
 
     End Sub
     Public Function identification()
         If assMaladie.IsMatch(control_identif.txtNum.Text) Then
-            control_identif.Visible = False
-            control_visionnement.Dock = DockStyle.Fill
-            control_visionnement.Visible = True
+            bool = False
+            access.test()
+            For ctr = 0 To access.ds.Tables(0).Rows.Count - 1
+                clsPers.mapping(access, ctr)
+
+                If control_identif.txtNum.Text = clsPers.assurance_maladie Then
+                    bool = True
+                End If
+
+            Next
+
+            If (bool) Then
+                control_identif.Visible = False
+                control_visionnement.Dock = DockStyle.Fill
+                control_visionnement.Visible = True
+                control_visionnement.initialiser(control_identif.txtNum.Text)
+            Else
+                control_identif.txtNum.Text = ""
+                control_identif.lblValide.Visible = True
+            End If
+
         Else
             If control_identif.txtNum.TextLength = 12 Then
                 control_identif.txtNum.Text = ""
