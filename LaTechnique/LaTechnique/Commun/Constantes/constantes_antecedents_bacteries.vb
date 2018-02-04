@@ -4,6 +4,6 @@
 
 
     Public Const STR_ASSURANCE_MALADIE As String = "assurance_maladie"
-    Public Const STR_ID_ANTECEDENTS_BACTERIES As String = "id_antecedant_bacterie"
+    Public Const STR_ID_ANTECEDENTS_BACTERIES As String = "id_bacteries"
 
 End Class

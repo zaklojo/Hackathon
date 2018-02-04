@@ -4,12 +4,17 @@ Public Class controlVisionnement
 
     Dim bd As New DataTest
     Dim bd2 As New DataTest
+    Dim bd3 As New DataTest
+    Dim bd4 As New DataTest
+    Dim bd5 As New DataTest
+    Dim bd6 As New DataTest
+    Dim bd7 As New DataTest
     Dim clsPers As New clsPersonne
-    Dim clsAllergies As New clsAntecedentsAllergies
+    Dim clsAllergies As New clsAllergies
     Dim clsBacteries As New clsAntecedentsBacteries
     Dim clsChir As New clsAntecedentsChirurgicaux
-    Dim clsMedicaments As New clsAntecedentsMedicaments
-    Dim clsMedicaux As New clsAntecedentsMedicaux
+    Dim clsMedicament As New clsMedicaments
+    Dim clsMedicaux As New clsMaladies
     Dim clsPsy As New clsAntecedentsPsychiatriques
     Dim clsVaccins As New clsAntecedentsVaccins
     Dim clsInfoSupp As New clsInfosSupplementaires
@@ -18,6 +23,7 @@ Public Class controlVisionnement
         Me.Visible = False
         Form1.menu()
     End Sub
+
 
 
     Public Sub initialiser(ByVal am As String)
@@ -42,18 +48,17 @@ Public Class controlVisionnement
         lblTaille.Text = clsPers.taille
         lblTaille.Text += " cm"
 
-        bd.infoPersonneAllergies(am)
-        If (bd.ds.Tables(0).Rows.Count - 1 <> 0) Then
-            For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
-                clsAllergies.mapping(bd, 0)
+        bd2.infoPersonneAllergies(am)
+        If (bd2.ds.Tables(0).Rows.Count > 0) Then
+            For ctr = 0 To bd2.ds.Tables(0).Rows.Count - 1
+                clsAllergies.mapping(bd2, ctr)
                 If ctr <> 0 Then
-                    lblAllergies.Text += ", "
-                    lblAllergies.Text += clsAllergies.id_allergie
+                    lblAllergies.Text += $", {clsAllergies.nom_allergie}"
                 Else
                     If clsAllergies.id_allergie <> 0 Then
-                        lblAllergies.Text = "Aucune connue"
+                        lblAllergies.Text = clsAllergies.nom_allergie
                     Else
-                        lblAllergies.Text = clsAllergies.id_allergie
+                        lblAllergies.Text = "Aucune connue"
                     End If
                 End If
             Next
@@ -73,11 +78,11 @@ Public Class controlVisionnement
         '    End If
         'Next
 
-        bd.infoPersonneChirurgies(am)
+        bd3.infoPersonneChirurgies(am)
 
-        If (bd.ds.Tables(0).Rows.Count - 1 <> 0) Then
-            For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
-                clsChir.mapping(bd, 0)
+        If (bd3.ds.Tables(0).Rows.Count > 0) Then
+            For ctr = 0 To bd3.ds.Tables(0).Rows.Count - 1
+                clsChir.mapping(bd3, ctr)
                 If ctr <> 0 Then
                     lblAntecedentsChirurgicaux.Text += ", "
                     lblAntecedentsChirurgicaux.Text += clsChir.id_chirurgie
@@ -93,31 +98,35 @@ Public Class controlVisionnement
             lblAntecedentsChirurgicaux.Text = "Aucune connue"
         End If
 
-        'bd.infoPersonneMedicaments(am)
+        bd4.infoPersonneMedicaments(am)
 
-        'For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
-        '    clsMedicaments.mapping(bd, 0)
-        'If ctr <> 0 Then
-        '    lblMedicaments.Text += ", "
-        '    lblMedicaments.Text += clsMedicaments.id_medicament
-        'Else
-        '    lblMedicaments.Text = clsMedicaments.id_medicament
-        'End If
-        'Next
+        If (bd4.ds.Tables(0).Rows.Count > 0) Then
+            For ctr = 0 To bd4.ds.Tables(0).Rows.Count - 1
+                clsMedicament.mapping(bd4, ctr)
+                If ctr <> 0 Then
+                    lblMedic.Text += ", "
+                    lblMedic.Text += clsMedicament.nom_medicament
+                Else
+                    lblMedic.Text = clsMedicament.nom_medicament
+                End If
+            Next
+        Else
+            lblMedic.Text = "Aucun connu"
+        End If
 
-        bd.infoPersonnePsychatriques(am)
+        bd5.infoPersonnePsychatriques(am)
 
-        If (bd.ds.Tables(0).Rows.Count - 1 <> 0) Then
-            For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
-                clsPsy.mapping(bd, 0)
+        If (bd5.ds.Tables(0).Rows.Count > 0) Then
+            For ctr = 0 To bd5.ds.Tables(0).Rows.Count - 1
+                clsPsy.mapping(bd5, ctr)
                 If ctr <> 0 Then
                     lblAntecedentsPsychiatriques.Text += ", "
                     lblAntecedentsPsychiatriques.Text += clsPsy.id_psychiatrique
                 Else
                     If clsPsy.id_psychiatrique <> "0" Then
-                        lblAntecedentsPsychiatriques.Text = "Aucune connue"
-                    Else
                         lblAntecedentsPsychiatriques.Text = clsPsy.id_psychiatrique
+                    Else
+                        lblAntecedentsPsychiatriques.Text = "Aucune connue"
                     End If
                 End If
             Next
@@ -138,19 +147,19 @@ Public Class controlVisionnement
         '    End If
         'Next
 
-        bd.infoPersonneMedicaux(am)
+        bd6.infoPersonneMedicaux(am)
 
-        If (bd.ds.Tables(0).Rows.Count - 1 <> 0) Then
-            For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
-                clsMedicaux.mapping(bd, 0)
+        If (bd6.ds.Tables(0).Rows.Count > 0) Then
+            For ctr = 0 To bd6.ds.Tables(0).Rows.Count - 1
+                clsMedicaux.mapping(bd6, ctr)
                 If ctr <> 0 Then
                     lblAntecedentsMedicaux.Text += ", "
-                    lblAntecedentsMedicaux.Text += clsMedicaux.id_medicaux
+                    lblAntecedentsMedicaux.Text += clsMedicaux.nom
                 Else
-                    If clsMedicaux.id_medicaux <> 0 Then
-                        lblAntecedentsMedicaux.Text = "Aucune connue"
+                    If clsMedicaux.id_maladie <> 0 Then
+                        lblAntecedentsMedicaux.Text = clsMedicaux.nom
                     Else
-                        lblAntecedentsMedicaux.Text = clsMedicaux.id_medicaux
+                        lblAntecedentsMedicaux.Text = "Aucune connue"
                     End If
                 End If
             Next
@@ -158,8 +167,8 @@ Public Class controlVisionnement
             lblAntecedentsMedicaux.Text = "Aucune connue"
         End If
 
-        bd2.infoPersonneInfoSupp(am)
-        clsInfoSupp.mapping(bd2, 0)
+        bd7.infoPersonneInfoSupp(am)
+        clsInfoSupp.mapping(bd7, 0)
 
         If (clsInfoSupp.trouble_comportement_info_supp) Then
             lblTroubleComportement.Text = "Oui, "
