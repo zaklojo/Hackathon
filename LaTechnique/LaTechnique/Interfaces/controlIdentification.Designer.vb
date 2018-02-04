@@ -66,7 +66,7 @@ Partial Class controlIdentification
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(210, 54)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Se connecter"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -76,7 +76,7 @@ Partial Class controlIdentification
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(210, 54)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Générer un code barre"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'txtNum
@@ -84,6 +84,7 @@ Partial Class controlIdentification
         Me.txtNum.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtNum.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNum.Location = New System.Drawing.Point(248, 308)
         Me.txtNum.Name = "txtNum"
