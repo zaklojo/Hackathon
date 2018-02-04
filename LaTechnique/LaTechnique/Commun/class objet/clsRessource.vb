@@ -6,6 +6,8 @@
     Private v_nom As String
     Private v_lien As Integer
     Private v_prenom As Integer
+    Private v_lien As String
+    Private v_prenom As String
     Private v_priorite As Integer
 
     'Propriétés

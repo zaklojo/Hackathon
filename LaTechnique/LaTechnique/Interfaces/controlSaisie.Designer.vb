@@ -135,6 +135,13 @@ Partial Class controlSaisie
         Me.btnSupprimerMedicaments = New System.Windows.Forms.Button()
         Me.btnAjouterMedicaments = New System.Windows.Forms.Button()
         Me.btnEnregistrer = New System.Windows.Forms.Button()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtPharmacie = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.dtpDernierePesee = New System.Windows.Forms.DateTimePicker()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.chkReanimationOui = New System.Windows.Forms.CheckBox()
+        Me.chkReanimationNon = New System.Windows.Forms.CheckBox()
         Label14 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.grpVaccins.SuspendLayout()
@@ -160,7 +167,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Label14, 8)
         Label14.Dock = System.Windows.Forms.DockStyle.Fill
         Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Label14.Location = New System.Drawing.Point(23, 1173)
+=======
+<<<<<<< HEAD
+        Label14.Location = New System.Drawing.Point(23, 1173)
+=======
+        Label14.Location = New System.Drawing.Point(31, 1569)
+        Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Label14.Name = "Label14"
         Label14.Size = New System.Drawing.Size(520, 41)
         Label14.TabIndex = 30
@@ -198,22 +214,28 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.Controls.Add(Me.grpAntecedentsPsychiatriques, 1, 15)
         Me.TableLayoutPanel1.Controls.Add(Me.txtTaille, 3, 10)
         Me.TableLayoutPanel1.Controls.Add(Me.txtPoids, 2, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label26, 1, 16)
+        Me.TableLayoutPanel1.Controls.Add(Me.dtpDernierePesee, 5, 14)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label25, 1, 14)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtPharmacie, 5, 8)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label22, 1, 8)
+        Me.TableLayoutPanel1.Controls.Add(Me.grpVaccins, 9, 56)
+        Me.TableLayoutPanel1.Controls.Add(Me.grpRessources, 1, 51)
+        Me.TableLayoutPanel1.Controls.Add(Me.grpAntecedentsPsychiatriques, 1, 21)
         Me.TableLayoutPanel1.Controls.Add(Me.txtPrenom, 5, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label21, 1, 42)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label20, 1, 40)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label19, 1, 38)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label18, 1, 36)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label17, 1, 34)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label16, 1, 32)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label15, 1, 30)
-        Me.TableLayoutPanel1.Controls.Add(Label14, 1, 28)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label13, 1, 26)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblInfosSupp, 1, 24)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label12, 1, 22)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label21, 1, 48)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label20, 1, 46)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label19, 1, 44)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label18, 1, 42)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label17, 1, 40)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label16, 1, 38)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label15, 1, 36)
+        Me.TableLayoutPanel1.Controls.Add(Label14, 1, 34)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label13, 1, 32)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblInfosSupp, 1, 30)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label12, 1, 28)
         Me.TableLayoutPanel1.Controls.Add(Me.Button1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label5, 1, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label6, 1, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 1, 10)
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 1, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.pbPhoto, 12, 3)
@@ -225,40 +247,83 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.Controls.Add(Me.txtDossierHopital, 5, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.btnAjouterPhoto, 12, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.btnSupprimerPhoto, 16, 7)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblPoids, 6, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label23, 4, 9)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblTaille, 6, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label24, 4, 10)
-        Me.TableLayoutPanel1.Controls.Add(Me.grpAntecedentsMedicaux, 1, 11)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkLunettes, 9, 42)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkProtheses, 9, 40)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkAppareilAuditif, 9, 38)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkProtection, 9, 36)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkAideTechnique, 9, 34)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkCutane, 9, 32)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkContention, 9, 30)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkFugue, 9, 28)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkDesorientation, 9, 26)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkComportement, 9, 24)
-        Me.TableLayoutPanel1.Controls.Add(Me.grpAntecedentsChirurgicaux, 9, 11)
-        Me.TableLayoutPanel1.Controls.Add(Me.grpAllergies, 9, 15)
-        Me.TableLayoutPanel1.Controls.Add(Me.txtComportement, 11, 24)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblComportement, 10, 24)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblContention, 10, 30)
-        Me.TableLayoutPanel1.Controls.Add(Me.txtContention, 11, 30)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkBas, 10, 40)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkHaut, 11, 40)
-        Me.TableLayoutPanel1.Controls.Add(Me.chkDeux, 13, 40)
-        Me.TableLayoutPanel1.Controls.Add(Me.lblAideTechnique, 10, 34)
-        Me.TableLayoutPanel1.Controls.Add(Me.txtAideTechnique, 11, 34)
-        Me.TableLayoutPanel1.Controls.Add(Me.grpMedicaments, 9, 45)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblPoids, 6, 13)
+        Me.TableLayoutPanel1.Controls.Add(Me.grpAntecedentsMedicaux, 1, 17)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkLunettes, 9, 48)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkProtheses, 9, 46)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkAppareilAuditif, 9, 44)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkProtection, 9, 42)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkAideTechnique, 9, 40)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkCutane, 9, 38)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkContention, 9, 36)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkFugue, 9, 34)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkDesorientation, 9, 32)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkComportement, 9, 30)
+        Me.TableLayoutPanel1.Controls.Add(Me.grpAntecedentsChirurgicaux, 9, 17)
+        Me.TableLayoutPanel1.Controls.Add(Me.grpAllergies, 9, 21)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtComportement, 11, 30)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblComportement, 10, 30)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblContention, 10, 36)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtContention, 11, 36)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkBas, 10, 46)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkHaut, 11, 46)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkDeux, 13, 46)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblAideTechnique, 10, 40)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtAideTechnique, 11, 40)
+        Me.TableLayoutPanel1.Controls.Add(Me.grpMedicaments, 9, 51)
         Me.TableLayoutPanel1.Controls.Add(Me.btnEnregistrer, 6, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label6, 1, 11)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtPoids, 3, 11)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label23, 4, 11)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 1, 13)
+        Me.TableLayoutPanel1.Controls.Add(Me.txtTaille, 3, 13)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label24, 4, 13)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkReanimationOui, 4, 16)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblTaille, 4, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.chkReanimationNon, 6, 16)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+<<<<<<< HEAD
         Me.TableLayoutPanel1.RowCount = 55
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
+<<<<<<< HEAD
+=======
+=======
+        Me.TableLayoutPanel1.RowCount = 61
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 159.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
@@ -266,10 +331,17 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+<<<<<<< HEAD
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+=======
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 129.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
@@ -282,6 +354,8 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+<<<<<<< HEAD
+=======
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -289,6 +363,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+<<<<<<< HEAD
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
@@ -306,6 +390,13 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+=======
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 136.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6.0!))
@@ -327,10 +418,26 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.grpVaccins, 11)
         Me.grpVaccins.Controls.Add(Me.TableLayoutPanel8)
         Me.grpVaccins.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.grpVaccins.Location = New System.Drawing.Point(549, 1962)
         Me.grpVaccins.Name = "grpVaccins"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpVaccins, 5)
         Me.grpVaccins.Size = New System.Drawing.Size(414, 147)
+=======
+<<<<<<< HEAD
+        Me.grpVaccins.Location = New System.Drawing.Point(549, 1962)
+=======
+        Me.grpVaccins.Location = New System.Drawing.Point(733, 2541)
+        Me.grpVaccins.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> origin/Interfaces
+        Me.grpVaccins.Name = "grpVaccins"
+        Me.TableLayoutPanel1.SetRowSpan(Me.grpVaccins, 5)
+<<<<<<< HEAD
+        Me.grpVaccins.Size = New System.Drawing.Size(414, 147)
+=======
+        Me.grpVaccins.Size = New System.Drawing.Size(551, 83)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.grpVaccins.TabIndex = 167
         Me.grpVaccins.TabStop = False
         Me.grpVaccins.Text = "Vaccins"
@@ -354,7 +461,15 @@ Partial Class controlSaisie
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
+<<<<<<< HEAD
         Me.TableLayoutPanel8.Size = New System.Drawing.Size(408, 125)
+=======
+<<<<<<< HEAD
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(408, 125)
+=======
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(543, 56)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.TableLayoutPanel8.TabIndex = 65
         '
         'cboVaccins
@@ -420,7 +535,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.grpRessources, 7)
         Me.grpRessources.Controls.Add(Me.TableLayoutPanel5)
         Me.grpRessources.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.grpRessources.Location = New System.Drawing.Point(23, 1670)
+=======
+<<<<<<< HEAD
+        Me.grpRessources.Location = New System.Drawing.Point(23, 1670)
+=======
+        Me.grpRessources.Location = New System.Drawing.Point(31, 2181)
+        Me.grpRessources.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.grpRessources.Name = "grpRessources"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpRessources, 5)
         Me.grpRessources.Size = New System.Drawing.Size(464, 286)
@@ -531,7 +655,11 @@ Partial Class controlSaisie
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(157, 18)
+<<<<<<< HEAD
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(131, 23)
         Me.TextBox1.TabIndex = 67
@@ -539,7 +667,11 @@ Partial Class controlSaisie
         'txtNomRessource
         '
         Me.txtNomRessource.Location = New System.Drawing.Point(2, 18)
+<<<<<<< HEAD
         Me.txtNomRessource.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.txtNomRessource.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtNomRessource.Name = "txtNomRessource"
         Me.txtNomRessource.Size = New System.Drawing.Size(144, 23)
         Me.txtNomRessource.TabIndex = 64
@@ -571,7 +703,11 @@ Partial Class controlSaisie
         'txtTelephoneRessource
         '
         Me.txtTelephoneRessource.Location = New System.Drawing.Point(2, 61)
+<<<<<<< HEAD
         Me.txtTelephoneRessource.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.txtTelephoneRessource.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtTelephoneRessource.Name = "txtTelephoneRessource"
         Me.txtTelephoneRessource.Size = New System.Drawing.Size(144, 23)
         Me.txtTelephoneRessource.TabIndex = 69
@@ -589,7 +725,11 @@ Partial Class controlSaisie
         'txtPosteRessource
         '
         Me.txtPosteRessource.Location = New System.Drawing.Point(157, 61)
+<<<<<<< HEAD
         Me.txtPosteRessource.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.txtPosteRessource.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtPosteRessource.Name = "txtPosteRessource"
         Me.txtPosteRessource.Size = New System.Drawing.Size(78, 23)
         Me.txtPosteRessource.TabIndex = 71
@@ -602,7 +742,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.grpAntecedentsPsychiatriques, 7)
         Me.grpAntecedentsPsychiatriques.Controls.Add(Me.TableLayoutPanel3)
         Me.grpAntecedentsPsychiatriques.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.grpAntecedentsPsychiatriques.Location = New System.Drawing.Point(23, 749)
+=======
+<<<<<<< HEAD
+        Me.grpAntecedentsPsychiatriques.Location = New System.Drawing.Point(23, 749)
+=======
+        Me.grpAntecedentsPsychiatriques.Location = New System.Drawing.Point(31, 1047)
+        Me.grpAntecedentsPsychiatriques.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.grpAntecedentsPsychiatriques.Name = "grpAntecedentsPsychiatriques"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpAntecedentsPsychiatriques, 5)
         Me.grpAntecedentsPsychiatriques.Size = New System.Drawing.Size(464, 226)
@@ -690,8 +839,17 @@ Partial Class controlSaisie
         'txtTaille
         '
         Me.txtTaille.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.txtTaille.Location = New System.Drawing.Point(140, 442)
         Me.txtTaille.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.txtTaille.Location = New System.Drawing.Point(140, 442)
+        Me.txtTaille.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.txtTaille.Location = New System.Drawing.Point(188, 566)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtTaille.Name = "txtTaille"
         Me.txtTaille.Size = New System.Drawing.Size(55, 32)
         Me.txtTaille.TabIndex = 63
@@ -699,8 +857,17 @@ Partial Class controlSaisie
         'txtPoids
         '
         Me.txtPoids.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.txtPoids.Location = New System.Drawing.Point(140, 392)
         Me.txtPoids.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.txtPoids.Location = New System.Drawing.Point(140, 392)
+        Me.txtPoids.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.txtPoids.Location = New System.Drawing.Point(188, 521)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtPoids.Name = "txtPoids"
         Me.txtPoids.Size = New System.Drawing.Size(55, 32)
         Me.txtPoids.TabIndex = 60
@@ -710,7 +877,11 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtPrenom, 6)
         Me.txtPrenom.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPrenom.Location = New System.Drawing.Point(260, 172)
+<<<<<<< HEAD
         Me.txtPrenom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.txtPrenom.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtPrenom.Name = "txtPrenom"
         Me.txtPrenom.Size = New System.Drawing.Size(258, 32)
         Me.txtPrenom.TabIndex = 52
@@ -721,7 +892,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label21, 8)
         Me.Label21.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label21.Location = New System.Drawing.Point(23, 1600)
+=======
+<<<<<<< HEAD
+        Me.Label21.Location = New System.Drawing.Point(23, 1600)
+=======
+        Me.Label21.Location = New System.Drawing.Point(31, 2094)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(520, 41)
         Me.Label21.TabIndex = 37
@@ -734,7 +914,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label20, 8)
         Me.Label20.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label20.Location = New System.Drawing.Point(23, 1539)
+=======
+<<<<<<< HEAD
+        Me.Label20.Location = New System.Drawing.Point(23, 1539)
+=======
+        Me.Label20.Location = New System.Drawing.Point(31, 2019)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(520, 41)
         Me.Label20.TabIndex = 36
@@ -747,7 +936,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label19, 8)
         Me.Label19.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label19.Location = New System.Drawing.Point(23, 1478)
+=======
+<<<<<<< HEAD
+        Me.Label19.Location = New System.Drawing.Point(23, 1478)
+=======
+        Me.Label19.Location = New System.Drawing.Point(31, 1944)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(520, 41)
         Me.Label19.TabIndex = 35
@@ -760,7 +958,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label18, 8)
         Me.Label18.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label18.Location = New System.Drawing.Point(23, 1417)
+=======
+<<<<<<< HEAD
+        Me.Label18.Location = New System.Drawing.Point(23, 1417)
+=======
+        Me.Label18.Location = New System.Drawing.Point(31, 1869)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(520, 41)
         Me.Label18.TabIndex = 34
@@ -773,7 +980,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label17, 8)
         Me.Label17.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label17.Location = New System.Drawing.Point(23, 1356)
+=======
+<<<<<<< HEAD
+        Me.Label17.Location = New System.Drawing.Point(23, 1356)
+=======
+        Me.Label17.Location = New System.Drawing.Point(31, 1794)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(520, 41)
         Me.Label17.TabIndex = 33
@@ -786,7 +1002,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label16, 8)
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label16.Location = New System.Drawing.Point(23, 1295)
+=======
+<<<<<<< HEAD
+        Me.Label16.Location = New System.Drawing.Point(23, 1295)
+=======
+        Me.Label16.Location = New System.Drawing.Point(31, 1719)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(520, 41)
         Me.Label16.TabIndex = 32
@@ -799,7 +1024,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label15, 8)
         Me.Label15.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label15.Location = New System.Drawing.Point(23, 1234)
+=======
+<<<<<<< HEAD
+        Me.Label15.Location = New System.Drawing.Point(23, 1234)
+=======
+        Me.Label15.Location = New System.Drawing.Point(31, 1644)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(520, 41)
         Me.Label15.TabIndex = 31
@@ -812,7 +1046,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label13, 8)
         Me.Label13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label13.Location = New System.Drawing.Point(23, 1112)
+=======
+<<<<<<< HEAD
+        Me.Label13.Location = New System.Drawing.Point(23, 1112)
+=======
+        Me.Label13.Location = New System.Drawing.Point(31, 1494)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(520, 41)
         Me.Label13.TabIndex = 29
@@ -825,7 +1068,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.lblInfosSupp, 8)
         Me.lblInfosSupp.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblInfosSupp.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.lblInfosSupp.Location = New System.Drawing.Point(23, 1051)
+=======
+<<<<<<< HEAD
+        Me.lblInfosSupp.Location = New System.Drawing.Point(23, 1051)
+=======
+        Me.lblInfosSupp.Location = New System.Drawing.Point(31, 1419)
+        Me.lblInfosSupp.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.lblInfosSupp.Name = "lblInfosSupp"
         Me.lblInfosSupp.Size = New System.Drawing.Size(520, 41)
         Me.lblInfosSupp.TabIndex = 28
@@ -837,7 +1089,16 @@ Partial Class controlSaisie
         Me.Label12.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label12, 8)
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label12.Location = New System.Drawing.Point(23, 1002)
+=======
+<<<<<<< HEAD
+        Me.Label12.Location = New System.Drawing.Point(23, 1002)
+=======
+        Me.Label12.Location = New System.Drawing.Point(31, 1358)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(316, 26)
         Me.Label12.TabIndex = 23
@@ -874,9 +1135,23 @@ Partial Class controlSaisie
         Me.Label6.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label6, 2)
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label6.Location = New System.Drawing.Point(23, 390)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(79, 26)
+=======
+<<<<<<< HEAD
+        Me.Label6.Location = New System.Drawing.Point(23, 390)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(79, 26)
+=======
+        Me.Label6.Location = New System.Drawing.Point(31, 518)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.TableLayoutPanel1.SetRowSpan(Me.Label6, 2)
+        Me.Label6.Size = New System.Drawing.Size(97, 31)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Poids :"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -886,7 +1161,16 @@ Partial Class controlSaisie
         Me.Label7.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label7, 2)
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label7.Location = New System.Drawing.Point(23, 440)
+=======
+<<<<<<< HEAD
+        Me.Label7.Location = New System.Drawing.Point(23, 440)
+=======
+        Me.Label7.Location = New System.Drawing.Point(31, 563)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(75, 26)
         Me.Label7.TabIndex = 7
@@ -932,7 +1216,11 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtNom, 6)
         Me.txtNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNom.Location = New System.Drawing.Point(260, 122)
+<<<<<<< HEAD
         Me.txtNom.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.txtNom.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtNom.Name = "txtNom"
         Me.txtNom.Size = New System.Drawing.Size(258, 32)
         Me.txtNom.TabIndex = 51
@@ -954,7 +1242,11 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtAssuranceMaladie, 3)
         Me.txtAssuranceMaladie.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAssuranceMaladie.Location = New System.Drawing.Point(260, 272)
+<<<<<<< HEAD
         Me.txtAssuranceMaladie.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.txtAssuranceMaladie.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtAssuranceMaladie.Name = "txtAssuranceMaladie"
         Me.txtAssuranceMaladie.Size = New System.Drawing.Size(216, 32)
         Me.txtAssuranceMaladie.TabIndex = 54
@@ -976,7 +1268,11 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.dtpDateNaissance, 3)
         Me.dtpDateNaissance.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpDateNaissance.Location = New System.Drawing.Point(260, 222)
+<<<<<<< HEAD
         Me.dtpDateNaissance.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.dtpDateNaissance.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.dtpDateNaissance.Name = "dtpDateNaissance"
         Me.dtpDateNaissance.Size = New System.Drawing.Size(228, 32)
         Me.dtpDateNaissance.TabIndex = 56
@@ -984,10 +1280,13 @@ Partial Class controlSaisie
         'txtDossierHopital
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtDossierHopital, 3)
-        Me.txtDossierHopital.Enabled = False
         Me.txtDossierHopital.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDossierHopital.Location = New System.Drawing.Point(260, 322)
+<<<<<<< HEAD
         Me.txtDossierHopital.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.txtDossierHopital.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtDossierHopital.Name = "txtDossierHopital"
         Me.txtDossierHopital.Size = New System.Drawing.Size(216, 32)
         Me.txtDossierHopital.TabIndex = 55
@@ -996,7 +1295,11 @@ Partial Class controlSaisie
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.btnAjouterPhoto, 2)
         Me.btnAjouterPhoto.Location = New System.Drawing.Point(755, 322)
+<<<<<<< HEAD
         Me.btnAjouterPhoto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.btnAjouterPhoto.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.btnAjouterPhoto.Name = "btnAjouterPhoto"
         Me.btnAjouterPhoto.Size = New System.Drawing.Size(76, 38)
         Me.btnAjouterPhoto.TabIndex = 58
@@ -1007,7 +1310,11 @@ Partial Class controlSaisie
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.btnSupprimerPhoto, 4)
         Me.btnSupprimerPhoto.Location = New System.Drawing.Point(895, 322)
+<<<<<<< HEAD
         Me.btnSupprimerPhoto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.btnSupprimerPhoto.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.btnSupprimerPhoto.Name = "btnSupprimerPhoto"
         Me.btnSupprimerPhoto.Size = New System.Drawing.Size(69, 38)
         Me.btnSupprimerPhoto.TabIndex = 59
@@ -1019,7 +1326,16 @@ Partial Class controlSaisie
         Me.lblPoids.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.lblPoids, 2)
         Me.lblPoids.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.lblPoids.Location = New System.Drawing.Point(341, 390)
+=======
+<<<<<<< HEAD
+        Me.lblPoids.Location = New System.Drawing.Point(341, 390)
+=======
+        Me.lblPoids.Location = New System.Drawing.Point(456, 563)
+        Me.lblPoids.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.lblPoids.Name = "lblPoids"
         Me.lblPoids.Size = New System.Drawing.Size(0, 26)
         Me.lblPoids.TabIndex = 13
@@ -1030,9 +1346,23 @@ Partial Class controlSaisie
         Me.Label23.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label23, 2)
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label23.Location = New System.Drawing.Point(201, 390)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(63, 26)
+=======
+<<<<<<< HEAD
+        Me.Label23.Location = New System.Drawing.Point(201, 390)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(63, 26)
+=======
+        Me.Label23.Location = New System.Drawing.Point(269, 518)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Name = "Label23"
+        Me.TableLayoutPanel1.SetRowSpan(Me.Label23, 2)
+        Me.Label23.Size = New System.Drawing.Size(78, 31)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label23.TabIndex = 62
         Me.Label23.Text = "livres"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1042,7 +1372,16 @@ Partial Class controlSaisie
         Me.lblTaille.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.lblTaille, 2)
         Me.lblTaille.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.lblTaille.Location = New System.Drawing.Point(341, 440)
+=======
+<<<<<<< HEAD
+        Me.lblTaille.Location = New System.Drawing.Point(341, 440)
+=======
+        Me.lblTaille.Location = New System.Drawing.Point(269, 0)
+        Me.lblTaille.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.lblTaille.Name = "lblTaille"
         Me.lblTaille.Size = New System.Drawing.Size(0, 26)
         Me.lblTaille.TabIndex = 14
@@ -1053,7 +1392,16 @@ Partial Class controlSaisie
         Me.Label24.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.Label24, 2)
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.Label24.Location = New System.Drawing.Point(201, 440)
+=======
+<<<<<<< HEAD
+        Me.Label24.Location = New System.Drawing.Point(201, 440)
+=======
+        Me.Label24.Location = New System.Drawing.Point(269, 563)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(42, 26)
         Me.Label24.TabIndex = 64
@@ -1068,7 +1416,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.grpAntecedentsMedicaux, 7)
         Me.grpAntecedentsMedicaux.Controls.Add(Me.TableLayoutPanel7)
         Me.grpAntecedentsMedicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.grpAntecedentsMedicaux.Location = New System.Drawing.Point(23, 493)
+=======
+<<<<<<< HEAD
+        Me.grpAntecedentsMedicaux.Location = New System.Drawing.Point(23, 493)
+=======
+        Me.grpAntecedentsMedicaux.Location = New System.Drawing.Point(31, 731)
+        Me.grpAntecedentsMedicaux.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.grpAntecedentsMedicaux.Name = "grpAntecedentsMedicaux"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpAntecedentsMedicaux, 3)
         Me.grpAntecedentsMedicaux.Size = New System.Drawing.Size(464, 223)
@@ -1157,8 +1514,17 @@ Partial Class controlSaisie
         '
         Me.chkLunettes.AutoSize = True
         Me.chkLunettes.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkLunettes.Location = New System.Drawing.Point(548, 1602)
         Me.chkLunettes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkLunettes.Location = New System.Drawing.Point(548, 1602)
+        Me.chkLunettes.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkLunettes.Location = New System.Drawing.Point(732, 2097)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkLunettes.Name = "chkLunettes"
         Me.chkLunettes.Size = New System.Drawing.Size(60, 30)
         Me.chkLunettes.TabIndex = 155
@@ -1169,8 +1535,17 @@ Partial Class controlSaisie
         '
         Me.chkProtheses.AutoSize = True
         Me.chkProtheses.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkProtheses.Location = New System.Drawing.Point(548, 1541)
         Me.chkProtheses.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkProtheses.Location = New System.Drawing.Point(548, 1541)
+        Me.chkProtheses.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkProtheses.Location = New System.Drawing.Point(732, 2022)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkProtheses.Name = "chkProtheses"
         Me.chkProtheses.Size = New System.Drawing.Size(60, 30)
         Me.chkProtheses.TabIndex = 154
@@ -1181,8 +1556,17 @@ Partial Class controlSaisie
         '
         Me.chkAppareilAuditif.AutoSize = True
         Me.chkAppareilAuditif.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkAppareilAuditif.Location = New System.Drawing.Point(548, 1480)
         Me.chkAppareilAuditif.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkAppareilAuditif.Location = New System.Drawing.Point(548, 1480)
+        Me.chkAppareilAuditif.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkAppareilAuditif.Location = New System.Drawing.Point(732, 1947)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkAppareilAuditif.Name = "chkAppareilAuditif"
         Me.chkAppareilAuditif.Size = New System.Drawing.Size(60, 30)
         Me.chkAppareilAuditif.TabIndex = 153
@@ -1193,8 +1577,17 @@ Partial Class controlSaisie
         '
         Me.chkProtection.AutoSize = True
         Me.chkProtection.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkProtection.Location = New System.Drawing.Point(548, 1419)
         Me.chkProtection.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkProtection.Location = New System.Drawing.Point(548, 1419)
+        Me.chkProtection.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkProtection.Location = New System.Drawing.Point(732, 1872)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkProtection.Name = "chkProtection"
         Me.chkProtection.Size = New System.Drawing.Size(60, 30)
         Me.chkProtection.TabIndex = 152
@@ -1205,8 +1598,17 @@ Partial Class controlSaisie
         '
         Me.chkAideTechnique.AutoSize = True
         Me.chkAideTechnique.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkAideTechnique.Location = New System.Drawing.Point(548, 1358)
         Me.chkAideTechnique.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkAideTechnique.Location = New System.Drawing.Point(548, 1358)
+        Me.chkAideTechnique.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkAideTechnique.Location = New System.Drawing.Point(732, 1797)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkAideTechnique.Name = "chkAideTechnique"
         Me.chkAideTechnique.Size = New System.Drawing.Size(60, 30)
         Me.chkAideTechnique.TabIndex = 151
@@ -1217,8 +1619,17 @@ Partial Class controlSaisie
         '
         Me.chkCutane.AutoSize = True
         Me.chkCutane.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkCutane.Location = New System.Drawing.Point(548, 1297)
         Me.chkCutane.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkCutane.Location = New System.Drawing.Point(548, 1297)
+        Me.chkCutane.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkCutane.Location = New System.Drawing.Point(732, 1722)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkCutane.Name = "chkCutane"
         Me.chkCutane.Size = New System.Drawing.Size(60, 30)
         Me.chkCutane.TabIndex = 150
@@ -1229,8 +1640,17 @@ Partial Class controlSaisie
         '
         Me.chkContention.AutoSize = True
         Me.chkContention.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkContention.Location = New System.Drawing.Point(548, 1236)
         Me.chkContention.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkContention.Location = New System.Drawing.Point(548, 1236)
+        Me.chkContention.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkContention.Location = New System.Drawing.Point(732, 1647)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkContention.Name = "chkContention"
         Me.chkContention.Size = New System.Drawing.Size(60, 30)
         Me.chkContention.TabIndex = 149
@@ -1241,8 +1661,17 @@ Partial Class controlSaisie
         '
         Me.chkFugue.AutoSize = True
         Me.chkFugue.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkFugue.Location = New System.Drawing.Point(548, 1175)
         Me.chkFugue.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkFugue.Location = New System.Drawing.Point(548, 1175)
+        Me.chkFugue.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkFugue.Location = New System.Drawing.Point(732, 1572)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkFugue.Name = "chkFugue"
         Me.chkFugue.Size = New System.Drawing.Size(60, 30)
         Me.chkFugue.TabIndex = 148
@@ -1253,8 +1682,17 @@ Partial Class controlSaisie
         '
         Me.chkDesorientation.AutoSize = True
         Me.chkDesorientation.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkDesorientation.Location = New System.Drawing.Point(548, 1114)
         Me.chkDesorientation.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkDesorientation.Location = New System.Drawing.Point(548, 1114)
+        Me.chkDesorientation.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkDesorientation.Location = New System.Drawing.Point(732, 1497)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkDesorientation.Name = "chkDesorientation"
         Me.chkDesorientation.Size = New System.Drawing.Size(60, 30)
         Me.chkDesorientation.TabIndex = 147
@@ -1265,8 +1703,17 @@ Partial Class controlSaisie
         '
         Me.chkComportement.AutoSize = True
         Me.chkComportement.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkComportement.Location = New System.Drawing.Point(548, 1053)
         Me.chkComportement.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkComportement.Location = New System.Drawing.Point(548, 1053)
+        Me.chkComportement.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkComportement.Location = New System.Drawing.Point(732, 1422)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkComportement.Name = "chkComportement"
         Me.chkComportement.Size = New System.Drawing.Size(60, 30)
         Me.chkComportement.TabIndex = 146
@@ -1281,7 +1728,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.grpAntecedentsChirurgicaux, 11)
         Me.grpAntecedentsChirurgicaux.Controls.Add(Me.TableLayoutPanel2)
         Me.grpAntecedentsChirurgicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.grpAntecedentsChirurgicaux.Location = New System.Drawing.Point(549, 493)
+=======
+<<<<<<< HEAD
+        Me.grpAntecedentsChirurgicaux.Location = New System.Drawing.Point(549, 493)
+=======
+        Me.grpAntecedentsChirurgicaux.Location = New System.Drawing.Point(733, 731)
+        Me.grpAntecedentsChirurgicaux.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.grpAntecedentsChirurgicaux.Name = "grpAntecedentsChirurgicaux"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpAntecedentsChirurgicaux, 3)
         Me.grpAntecedentsChirurgicaux.Size = New System.Drawing.Size(414, 223)
@@ -1374,7 +1830,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.grpAllergies, 11)
         Me.grpAllergies.Controls.Add(Me.TableLayoutPanel4)
         Me.grpAllergies.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.grpAllergies.Location = New System.Drawing.Point(549, 749)
+=======
+<<<<<<< HEAD
+        Me.grpAllergies.Location = New System.Drawing.Point(549, 749)
+=======
+        Me.grpAllergies.Location = New System.Drawing.Point(733, 1047)
+        Me.grpAllergies.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.grpAllergies.Name = "grpAllergies"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpAllergies, 5)
         Me.grpAllergies.Size = New System.Drawing.Size(414, 226)
@@ -1463,8 +1928,17 @@ Partial Class controlSaisie
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtComportement, 8)
         Me.txtComportement.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.txtComportement.Location = New System.Drawing.Point(722, 1053)
         Me.txtComportement.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.txtComportement.Location = New System.Drawing.Point(722, 1053)
+        Me.txtComportement.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.txtComportement.Location = New System.Drawing.Point(962, 1422)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtComportement.Name = "txtComportement"
         Me.txtComportement.Size = New System.Drawing.Size(229, 32)
         Me.txtComportement.TabIndex = 156
@@ -1473,8 +1947,17 @@ Partial Class controlSaisie
         '
         Me.lblComportement.AutoSize = True
         Me.lblComportement.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.lblComportement.Location = New System.Drawing.Point(612, 1051)
         Me.lblComportement.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+=======
+<<<<<<< HEAD
+        Me.lblComportement.Location = New System.Drawing.Point(612, 1051)
+        Me.lblComportement.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+=======
+        Me.lblComportement.Location = New System.Drawing.Point(818, 1419)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.lblComportement.Name = "lblComportement"
         Me.lblComportement.Size = New System.Drawing.Size(102, 41)
         Me.lblComportement.TabIndex = 157
@@ -1484,8 +1967,17 @@ Partial Class controlSaisie
         '
         Me.lblContention.AutoSize = True
         Me.lblContention.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.lblContention.Location = New System.Drawing.Point(612, 1234)
         Me.lblContention.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+=======
+<<<<<<< HEAD
+        Me.lblContention.Location = New System.Drawing.Point(612, 1234)
+        Me.lblContention.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+=======
+        Me.lblContention.Location = New System.Drawing.Point(818, 1644)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.lblContention.Name = "lblContention"
         Me.lblContention.Size = New System.Drawing.Size(102, 41)
         Me.lblContention.TabIndex = 159
@@ -1495,8 +1987,17 @@ Partial Class controlSaisie
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtContention, 8)
         Me.txtContention.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.txtContention.Location = New System.Drawing.Point(722, 1236)
         Me.txtContention.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.txtContention.Location = New System.Drawing.Point(722, 1236)
+        Me.txtContention.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.txtContention.Location = New System.Drawing.Point(962, 1647)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtContention.Name = "txtContention"
         Me.txtContention.Size = New System.Drawing.Size(229, 32)
         Me.txtContention.TabIndex = 158
@@ -1505,8 +2006,17 @@ Partial Class controlSaisie
         '
         Me.chkBas.AutoSize = True
         Me.chkBas.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkBas.Location = New System.Drawing.Point(612, 1541)
         Me.chkBas.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkBas.Location = New System.Drawing.Point(612, 1541)
+        Me.chkBas.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkBas.Location = New System.Drawing.Point(818, 2022)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkBas.Name = "chkBas"
         Me.chkBas.Size = New System.Drawing.Size(100, 30)
         Me.chkBas.TabIndex = 160
@@ -1518,8 +2028,17 @@ Partial Class controlSaisie
         Me.chkHaut.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.chkHaut, 2)
         Me.chkHaut.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkHaut.Location = New System.Drawing.Point(722, 1541)
         Me.chkHaut.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkHaut.Location = New System.Drawing.Point(722, 1541)
+        Me.chkHaut.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkHaut.Location = New System.Drawing.Point(962, 2022)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkHaut.Name = "chkHaut"
         Me.chkHaut.Size = New System.Drawing.Size(107, 30)
         Me.chkHaut.TabIndex = 161
@@ -1531,8 +2050,17 @@ Partial Class controlSaisie
         Me.chkDeux.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.chkDeux, 7)
         Me.chkDeux.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.chkDeux.Location = New System.Drawing.Point(835, 1541)
         Me.chkDeux.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.chkDeux.Location = New System.Drawing.Point(835, 1541)
+        Me.chkDeux.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.chkDeux.Location = New System.Drawing.Point(1112, 2022)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.chkDeux.Name = "chkDeux"
         Me.chkDeux.Size = New System.Drawing.Size(119, 30)
         Me.chkDeux.TabIndex = 162
@@ -1543,8 +2071,17 @@ Partial Class controlSaisie
         '
         Me.lblAideTechnique.AutoSize = True
         Me.lblAideTechnique.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.lblAideTechnique.Location = New System.Drawing.Point(612, 1356)
         Me.lblAideTechnique.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+=======
+<<<<<<< HEAD
+        Me.lblAideTechnique.Location = New System.Drawing.Point(612, 1356)
+        Me.lblAideTechnique.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+=======
+        Me.lblAideTechnique.Location = New System.Drawing.Point(818, 1794)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.lblAideTechnique.Name = "lblAideTechnique"
         Me.lblAideTechnique.Size = New System.Drawing.Size(102, 41)
         Me.lblAideTechnique.TabIndex = 164
@@ -1554,8 +2091,17 @@ Partial Class controlSaisie
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.txtAideTechnique, 8)
         Me.txtAideTechnique.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.txtAideTechnique.Location = New System.Drawing.Point(722, 1358)
         Me.txtAideTechnique.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+<<<<<<< HEAD
+        Me.txtAideTechnique.Location = New System.Drawing.Point(722, 1358)
+        Me.txtAideTechnique.Margin = New System.Windows.Forms.Padding(2)
+=======
+        Me.txtAideTechnique.Location = New System.Drawing.Point(962, 1797)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.txtAideTechnique.Name = "txtAideTechnique"
         Me.txtAideTechnique.Size = New System.Drawing.Size(229, 32)
         Me.txtAideTechnique.TabIndex = 163
@@ -1568,7 +2114,16 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.grpMedicaments, 11)
         Me.grpMedicaments.Controls.Add(Me.TableLayoutPanel6)
         Me.grpMedicaments.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.grpMedicaments.Location = New System.Drawing.Point(549, 1670)
+=======
+<<<<<<< HEAD
+        Me.grpMedicaments.Location = New System.Drawing.Point(549, 1670)
+=======
+        Me.grpMedicaments.Location = New System.Drawing.Point(733, 2181)
+        Me.grpMedicaments.Margin = New System.Windows.Forms.Padding(4)
+>>>>>>> origin/Interfaces
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.grpMedicaments.Name = "grpMedicaments"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpMedicaments, 5)
         Me.grpMedicaments.Size = New System.Drawing.Size(414, 226)
@@ -1658,7 +2213,11 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.SetColumnSpan(Me.btnEnregistrer, 2)
         Me.btnEnregistrer.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEnregistrer.Location = New System.Drawing.Point(340, 2)
+<<<<<<< HEAD
         Me.btnEnregistrer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.btnEnregistrer.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.btnEnregistrer.Name = "btnEnregistrer"
         Me.TableLayoutPanel1.SetRowSpan(Me.btnEnregistrer, 2)
         Me.btnEnregistrer.Size = New System.Drawing.Size(148, 65)
@@ -1666,12 +2225,100 @@ Partial Class controlSaisie
         Me.btnEnregistrer.Text = "Enregistrer"
         Me.btnEnregistrer.UseVisualStyleBackColor = True
         '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label22, 3)
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(31, 458)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label22.Name = "Label22"
+        Me.TableLayoutPanel1.SetRowSpan(Me.Label22, 2)
+        Me.Label22.Size = New System.Drawing.Size(158, 31)
+        Me.Label22.TabIndex = 169
+        Me.Label22.Text = "Pharmacie :"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtPharmacie
+        '
+        Me.TableLayoutPanel1.SetColumnSpan(Me.txtPharmacie, 3)
+        Me.txtPharmacie.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPharmacie.Location = New System.Drawing.Point(348, 461)
+        Me.txtPharmacie.Name = "txtPharmacie"
+        Me.TableLayoutPanel1.SetRowSpan(Me.txtPharmacie, 2)
+        Me.txtPharmacie.Size = New System.Drawing.Size(304, 38)
+        Me.txtPharmacie.TabIndex = 170
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label25, 4)
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(31, 625)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label25.Name = "Label25"
+        Me.TableLayoutPanel1.SetRowSpan(Me.Label25, 2)
+        Me.Label25.Size = New System.Drawing.Size(274, 31)
+        Me.Label25.TabIndex = 171
+        Me.Label25.Text = "Date dernière pesée :"
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'dtpDernierePesee
+        '
+        Me.TableLayoutPanel1.SetColumnSpan(Me.dtpDernierePesee, 3)
+        Me.dtpDernierePesee.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpDernierePesee.Location = New System.Drawing.Point(348, 628)
+        Me.dtpDernierePesee.Name = "dtpDernierePesee"
+        Me.dtpDernierePesee.Size = New System.Drawing.Size(304, 38)
+        Me.dtpDernierePesee.TabIndex = 172
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label26, 3)
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(31, 678)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(181, 31)
+        Me.Label26.TabIndex = 173
+        Me.Label26.Text = "Réanimation :"
+        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'chkReanimationOui
+        '
+        Me.chkReanimationOui.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.chkReanimationOui, 2)
+        Me.chkReanimationOui.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkReanimationOui.Location = New System.Drawing.Point(268, 681)
+        Me.chkReanimationOui.Name = "chkReanimationOui"
+        Me.chkReanimationOui.Size = New System.Drawing.Size(78, 35)
+        Me.chkReanimationOui.TabIndex = 174
+        Me.chkReanimationOui.Text = "Oui"
+        Me.chkReanimationOui.UseVisualStyleBackColor = True
+        '
+        'chkReanimationNon
+        '
+        Me.chkReanimationNon.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.chkReanimationNon, 2)
+        Me.chkReanimationNon.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkReanimationNon.Location = New System.Drawing.Point(455, 681)
+        Me.chkReanimationNon.Name = "chkReanimationNon"
+        Me.chkReanimationNon.Size = New System.Drawing.Size(86, 35)
+        Me.chkReanimationNon.TabIndex = 175
+        Me.chkReanimationNon.Text = "Non"
+        Me.chkReanimationNon.UseVisualStyleBackColor = True
+        '
         'controlSaisie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.TableLayoutPanel1)
+<<<<<<< HEAD
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+=======
+        Me.Margin = New System.Windows.Forms.Padding(2)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
         Me.Name = "controlSaisie"
         Me.Size = New System.Drawing.Size(1021, 2112)
         Me.TableLayoutPanel1.ResumeLayout(False)
@@ -1815,4 +2462,11 @@ Partial Class controlSaisie
     Friend WithEvents btnSupprimerVaccin As Button
     Friend WithEvents btnAjouterVaccin As Button
     Friend WithEvents btnEnregistrer As Button
+    Friend WithEvents dtpDernierePesee As DateTimePicker
+    Friend WithEvents Label25 As Label
+    Friend WithEvents txtPharmacie As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents chkReanimationOui As CheckBox
+    Friend WithEvents chkReanimationNon As CheckBox
 End Class

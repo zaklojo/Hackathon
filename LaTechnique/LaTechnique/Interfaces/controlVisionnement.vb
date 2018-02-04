@@ -3,12 +3,15 @@
 Public Class controlVisionnement
 
     Dim bd As New DataTest
+<<<<<<< HEAD
     Dim bd2 As New DataTest
     Dim bd3 As New DataTest
     Dim bd4 As New DataTest
     Dim bd5 As New DataTest
     Dim bd6 As New DataTest
     Dim bd7 As New DataTest
+=======
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
     Dim clsPers As New clsPersonne
     Dim clsAllergies As New clsAllergies
     Dim clsBacteries As New clsAntecedentsBacteries
@@ -17,7 +20,8 @@ Public Class controlVisionnement
     Dim clsMedicaux As New clsMaladies
     Dim clsPsy As New clsAntecedentsPsychiatriques
     Dim clsVaccins As New clsAntecedentsVaccins
-    Dim clsInfoSupp As New clsInfosSupplementaires
+    Dim clsInfoSupplementaire As New clsInfosSupplementaires
+    Dim clsRessources As New clsRessource
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Visible = False
@@ -149,9 +153,15 @@ Public Class controlVisionnement
 
         bd6.infoPersonneMedicaux(am)
 
+<<<<<<< HEAD
         If (bd6.ds.Tables(0).Rows.Count > 0) Then
             For ctr = 0 To bd6.ds.Tables(0).Rows.Count - 1
                 clsMedicaux.mapping(bd6, ctr)
+=======
+        If (bd.ds.Tables(0).Rows.Count <> 0) Then
+            For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
+                clsMedicaux.mapping(bd, 0)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
                 If ctr <> 0 Then
                     lblAntecedentsMedicaux.Text += ", "
                     lblAntecedentsMedicaux.Text += clsMedicaux.nom
@@ -167,75 +177,97 @@ Public Class controlVisionnement
             lblAntecedentsMedicaux.Text = "Aucune connue"
         End If
 
+<<<<<<< HEAD
         bd7.infoPersonneInfoSupp(am)
         clsInfoSupp.mapping(bd7, 0)
+=======
+        bd.infoPersonneInfoSupp(am)
+        clsInfoSupplementaire.mapping(bd, 0)
+>>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
 
-        If (clsInfoSupp.trouble_comportement_info_supp) Then
+        If (clsInfoSupplementaire.trouble_comportement_info_supp) Then
             lblTroubleComportement.Text = "Oui, "
-            lblTroubleComportement.Text += clsInfoSupp.p_trouble_comportement_info_supp
+            lblTroubleComportement.Text += clsInfoSupplementaire.p_trouble_comportement_info_supp
         Else
             lblTroubleComportement.Text = "Non"
         End If
 
-        If (clsInfoSupp.desorientation_info_supp) Then
+        If (clsInfoSupplementaire.desorientation_info_supp) Then
             lblDesorientation.Text = "Oui"
         Else
             lblDesorientation.Text = "Non"
         End If
 
-        If (clsInfoSupp.fugue_info_supp) Then
+        If (clsInfoSupplementaire.fugue_info_supp) Then
             lblRisqueFugue.Text = "Oui"
         Else
             lblRisqueFugue.Text = "Non"
         End If
 
-        If (clsInfoSupp.contention_info_supp) Then
+        If (clsInfoSupplementaire.contention_info_supp) Then
             lblUtilisationContention.Text = "Oui, "
-            lblUtilisationContention.Text += clsInfoSupp.p_contention_info_supp
+            lblUtilisationContention.Text += clsInfoSupplementaire.p_contention_info_supp
         Else
             lblUtilisationContention.Text = "Non"
         End If
 
-        If (clsInfoSupp.problemes_cutanes_info_supp) Then
+        If (clsInfoSupplementaire.problemes_cutanes_info_supp) Then
             lblCutanes.Text = "Oui, "
-            lblCutanes.Text += clsInfoSupp.p_problemes_cutanes_info_supp
+            lblCutanes.Text += clsInfoSupplementaire.p_problemes_cutanes_info_supp
         Else
             lblCutanes.Text = "Non"
         End If
 
-        If (clsInfoSupp.aide_technique_info_supp) Then
-            lblAideTechnique.Text = "Oui, "
-            lblAideTechnique.Text += clsInfoSupp.p_aide_technique_info_supp
+        If (clsInfoSupplementaire.aide_technique_info_supp) Then
+            lblCutanes.Text = "Oui, "
+            lblCutanes.Text += clsInfoSupplementaire.p_aide_technique_info_supp
         Else
-            lblAideTechnique.Text = "Non"
+            lblCutanes.Text = "Non"
         End If
 
-        If (clsInfoSupp.protections_info_supp) Then
-            lblPortProtection.Text = "Oui"
+        If (clsInfoSupplementaire.protections_info_supp) Then
+            lblCutanes.Text = "Oui"
         Else
-            lblPortProtection.Text = "Non"
+            lblCutanes.Text = "Non"
         End If
 
-        If (clsInfoSupp.appareil_auditif_info_supp) Then
-            lblAppareilAuditif.Text = "Oui"
+        If (clsInfoSupplementaire.appareil_auditif_info_supp) Then
+            lblCutanes.Text = "Oui"
         Else
-            lblAppareilAuditif.Text = "Non"
+            lblCutanes.Text = "Non"
         End If
 
-        If (clsInfoSupp.protheses_dentaires_info_supp) Then
-            lblProthesesDentaires.Text = "Oui"
+        If (clsInfoSupplementaire.protheses_dentaires_info_supp) Then
+            lblCutanes.Text = "Oui, "
+            lblCutanes.Text += clsInfoSupplementaire.p_protheses_dentaires_info_supp
         Else
-            lblProthesesDentaires.Text = "Non"
+            lblCutanes.Text = "Non"
         End If
 
-        If (clsInfoSupp.lunettes_info_supp) Then
-            lblLunettes.Text = "Oui"
+        If (clsInfoSupplementaire.lunettes_info_supp) Then
+            lblCutanes.Text = "Oui"
         Else
-            lblLunettes.Text = "Non"
+            lblCutanes.Text = "Non"
         End If
 
+        'Afficher les personnes à contacter/Ressources
+        bd = New DataTest
+        bd.ressources(am)
+        If (bd.ds.Tables(0).Rows.Count <> 0) Then
+            For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
+                clsRessources.mapping(bd, ctr)
+                If ctr <> 0 Then
+                    lblPersonneContact.Text += vbNewLine
+                    lblPersonneContact.Text += clsRessources.nom + ", " + clsRessources.prenom
+                Else
+                    lblPersonneContact.Text = clsRessources.nom + ", " + clsRessources.prenom
+                End If
+            Next
+        Else
+            lblPersonneContact.Text = "Aucune personne à contacter connue"
+        End If
+
+        bd = New DataTest
     End Sub
-
-
 
 End Class
