@@ -138,6 +138,7 @@
     <Compile Include="Commun\Constantes\constantes_telephones.vb" />
     <Compile Include="Commun\Constantes\constantes_vaccins.vb" />
     <Compile Include="Commun\DataAcces\dataAccessObjet.vb" />
+    <Compile Include="Commun\DataAcces\DataTest.vb" />
     <Compile Include="Commun\Modules\FonctionsUtiles.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

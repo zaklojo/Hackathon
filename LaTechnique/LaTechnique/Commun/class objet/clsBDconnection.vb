@@ -6,7 +6,7 @@ Imports System.Windows.Forms
 Public Class clsBDconnection
 
     Private _position As Integer = 0
-    Public Const _Connectionstring As String = "Server=localhost; DataBase=nouveaucarpediem; UId=root; Pwd=; Allow Zero DateTime=true ; Convert Zero Datetime=true; "
+    Public Const _Connectionstring As String = "Server=192.168.108.124; DataBase=technique; UId=user; Pwd=; Allow Zero DateTime=true ; Convert Zero Datetime=true; "
     Friend _conn As New MySqlConnection
     Private _cmd As MySqlCommand
     Dim gestionOperation As New MySqlCommandBuilder
@@ -26,9 +26,6 @@ Public Class clsBDconnection
     Sub Requete(ByVal req As String, ByVal ds As DataSet, ByVal da As MySqlDataAdapter, ByVal table As String)
         _conn.Close()
         _conn.ConnectionString = _Connectionstring
-
-
-
 
         Try
             If _conn.State <> ConnectionState.Open Then
