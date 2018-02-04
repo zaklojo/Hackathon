@@ -618,4 +618,10 @@ Public Class controlGenerationCodeBarre
     Private Sub controlGenerationCodeBarre_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnSave.Visible = False
     End Sub
+
+    Private Sub btnQuitter_Click(sender As Object, e As EventArgs) Handles btnQuitter.Click
+        Me.Visible = False
+        Form1.control_identif.Dock = DockStyle.Fill
+        Form1.control_identif.Visible = True
+    End Sub
 End Class

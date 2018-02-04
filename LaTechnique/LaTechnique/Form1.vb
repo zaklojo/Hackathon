@@ -3,6 +3,9 @@ Imports System.Text.RegularExpressions
 Public Class Form1
 
     Public control_identif As New controlIdentification
+    Public control_visionnement As New controlVisionnement
+    Public control_saisie As New controlSaisie
+    Public control_generationcode As New controlGenerationCodeBarre
 
     Dim access As New DataTest
     Dim clsPers As New clsPersonne
@@ -15,8 +18,14 @@ Public Class Form1
         'Rajoute les controles
         pControl.Controls.Add(control_identif)
         pControl.Controls.Add(control_visionnement)
+        pControl.Controls.Add(control_saisie)
+        pControl.Controls.Add(control_generationcode)
         'Fait afficher le controle de base
+        control_visionnement.Dock = DockStyle.Fill
+        control_identif.Visible = True
         control_visionnement.Visible = False
+        control_saisie.Visible = False
+        'Pour les tests
         'control_saisie.Dock = DockStyle.Fill
         'control_identif.Visible = False
         'control_visionnement.Dock = DockStyle.Fill
@@ -43,6 +52,7 @@ Public Class Form1
                 control_identif.Visible = False
                 control_visionnement.Dock = DockStyle.Fill
                 control_visionnement.Visible = True
+                control_visionnement.initialiser(control_identif.txtNum.Text)
             Else
                 control_identif.txtNum.Text = ""
                 control_identif.lblValide.Visible = True

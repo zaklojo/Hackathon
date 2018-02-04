@@ -12,6 +12,7 @@ Public Class controlVisionnement
     Dim clsPsy As New clsAntecedentsPsychiatriques
     Dim clsVaccins As New clsAntecedentsVaccins
     Dim clsInfoSupplementaire As New clsInfosSupplementaires
+    Dim clsRessources As New clsRessource
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Visible = False
@@ -139,7 +140,7 @@ Public Class controlVisionnement
 
         bd.infoPersonneMedicaux(am)
 
-        If (bd.ds.Tables(0).Rows.Count - 1 <> 0) Then
+        If (bd.ds.Tables(0).Rows.Count <> 0) Then
             For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
                 clsMedicaux.mapping(bd, 0)
                 If ctr <> 0 Then
@@ -225,8 +226,24 @@ Public Class controlVisionnement
             lblCutanes.Text = "Non"
         End If
 
+        'Afficher les personnes à contacter/Ressources
+        bd = New DataTest
+        bd.ressources(am)
+        If (bd.ds.Tables(0).Rows.Count <> 0) Then
+            For ctr = 0 To bd.ds.Tables(0).Rows.Count - 1
+                clsRessources.mapping(bd, ctr)
+                If ctr <> 0 Then
+                    lblPersonneContact.Text += vbNewLine
+                    lblPersonneContact.Text += clsRessources.nom + ", " + clsRessources.prenom
+                Else
+                    lblPersonneContact.Text = clsRessources.nom + ", " + clsRessources.prenom
+                End If
+            Next
+        Else
+            lblPersonneContact.Text = "Aucune personne à contacter connue"
+        End If
+
+
     End Sub
-
-
 
 End Class

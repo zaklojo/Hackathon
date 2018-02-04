@@ -22,6 +22,7 @@ Partial Class Form1
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.pControl = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
@@ -32,13 +33,18 @@ Partial Class Form1
         Me.pControl.Location = New System.Drawing.Point(0, 0)
         Me.pControl.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pControl.Name = "pControl"
+        Me.pControl.Size = New System.Drawing.Size(1541, 778)
         Me.pControl.TabIndex = 0
         '
         'Form1
         '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
+        Me.ClientSize = New System.Drawing.Size(1541, 778)
         Me.Controls.Add(Me.pControl)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "La technique - Application"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
