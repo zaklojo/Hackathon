@@ -4,7 +4,6 @@ Public Class Form1
 
     Public control_identif As New controlIdentification
     Dim control_visionnement As New controlVisionnement
-    Dim control_saisie As New controlSaisie
 
     Dim access As New DataTest
     Dim clsPers As New clsPersonne
@@ -17,16 +16,16 @@ Public Class Form1
         'Rajoute les controles
         pControl.Controls.Add(control_identif)
         pControl.Controls.Add(control_visionnement)
-        pControl.Controls.Add(control_saisie)
         'Fait afficher le controle de base
         control_saisie.Dock = DockStyle.Fill
         control_identif.Visible = False
         control_visionnement.Visible = False
         control_saisie.Visible = True
+        'control_saisie.Dock = DockStyle.Fill
         'control_identif.Visible = False
         'control_visionnement.Dock = DockStyle.Fill
         'control_visionnement.Visible = True
-        control_saisie.initialiser()
+        'control_saisie.initialiser()
 
 
     End Sub
@@ -47,7 +46,6 @@ Public Class Form1
                 control_identif.Visible = False
                 control_visionnement.Dock = DockStyle.Fill
                 control_visionnement.Visible = True
-                '  control_visionnement.initialiser(control_identif.txtNum.Text)
             Else
                 control_identif.txtNum.Text = ""
                 control_identif.lblValide.Visible = True
