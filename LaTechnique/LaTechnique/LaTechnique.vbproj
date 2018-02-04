@@ -159,6 +159,12 @@
     <Compile Include="Interfaces\controlIdentification.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Interfaces\controlSaisie.Designer.vb">
+      <DependentUpon>controlSaisie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\controlSaisie.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Interfaces\controlVisionnement.Designer.vb">
       <DependentUpon>controlVisionnement.vb</DependentUpon>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\controlIdentification.resx">
       <DependentUpon>controlIdentification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\controlSaisie.resx">
+      <DependentUpon>controlSaisie.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\controlVisionnement.resx">
       <DependentUpon>controlVisionnement.vb</DependentUpon>

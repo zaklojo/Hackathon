@@ -214,8 +214,7 @@ Public Class controlVisionnement
         End If
 
         If (clsInfoSupp.protheses_dentaires_info_supp) Then
-            lblProthesesDentaires.Text = "Oui, "
-            'lblProthesesDentaires.Text += clsInfoSupp.p_protheses_dentaires_info_supp
+            lblProthesesDentaires.Text = "Oui"
         Else
             lblProthesesDentaires.Text = "Non"
         End If

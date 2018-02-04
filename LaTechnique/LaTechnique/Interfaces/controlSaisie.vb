@@ -1,7 +1,7 @@
 ﻿Public Class controlSaisie
     Public dtSaisie As New DataTest
     Public Sub initialiser()
-        dtSaisie.testAllergies()
+        'dtSaisie.testAllergies()
         For index = 0 To dtSaisie.ds.Tables(0).Rows.Count - 1
             Dim allergies As New clsAllergies
             allergies.mapping(dtSaisie, index)
