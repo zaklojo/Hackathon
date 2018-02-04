@@ -3,6 +3,7 @@
 Public Class controlVisionnement
 
     Dim bd As New DataTest
+    Dim bd2 As New DataTest
     Dim clsPers As New clsPersonne
     Dim clsAllergies As New clsAntecedentsAllergies
     Dim clsBacteries As New clsAntecedentsBacteries
@@ -11,7 +12,7 @@ Public Class controlVisionnement
     Dim clsMedicaux As New clsAntecedentsMedicaux
     Dim clsPsy As New clsAntecedentsPsychiatriques
     Dim clsVaccins As New clsAntecedentsVaccins
-    Dim clsInfoSupplementaire As New clsInfosSupplementaires
+    Dim clsInfoSupp As New clsInfosSupplementaires
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Visible = False
@@ -157,72 +158,72 @@ Public Class controlVisionnement
             lblAntecedentsMedicaux.Text = "Aucune connue"
         End If
 
-        bd.infoPersonneInfoSupp(am)
-        clsInfoSupplementaire.mapping(bd, 0)
+        bd2.infoPersonneInfoSupp(am)
+        clsInfoSupp.mapping(bd2, 0)
 
-        If (clsInfoSupplementaire.trouble_comportement_info_supp) Then
+        If (clsInfoSupp.trouble_comportement_info_supp) Then
             lblTroubleComportement.Text = "Oui, "
-            lblTroubleComportement.Text += clsInfoSupplementaire.p_trouble_comportement_info_supp
+            lblTroubleComportement.Text += clsInfoSupp.p_trouble_comportement_info_supp
         Else
             lblTroubleComportement.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.desorientation_info_supp) Then
+        If (clsInfoSupp.desorientation_info_supp) Then
             lblDesorientation.Text = "Oui"
         Else
             lblDesorientation.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.fugue_info_supp) Then
+        If (clsInfoSupp.fugue_info_supp) Then
             lblRisqueFugue.Text = "Oui"
         Else
             lblRisqueFugue.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.contention_info_supp) Then
+        If (clsInfoSupp.contention_info_supp) Then
             lblUtilisationContention.Text = "Oui, "
-            lblUtilisationContention.Text += clsInfoSupplementaire.p_contention_info_supp
+            lblUtilisationContention.Text += clsInfoSupp.p_contention_info_supp
         Else
             lblUtilisationContention.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.problemes_cutanes_info_supp) Then
+        If (clsInfoSupp.problemes_cutanes_info_supp) Then
             lblCutanes.Text = "Oui, "
-            lblCutanes.Text += clsInfoSupplementaire.p_problemes_cutanes_info_supp
+            lblCutanes.Text += clsInfoSupp.p_problemes_cutanes_info_supp
         Else
             lblCutanes.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.aide_technique_info_supp) Then
-            lblCutanes.Text = "Oui, "
-            lblCutanes.Text += clsInfoSupplementaire.p_aide_technique_info_supp
+        If (clsInfoSupp.aide_technique_info_supp) Then
+            lblAideTechnique.Text = "Oui, "
+            lblAideTechnique.Text += clsInfoSupp.p_aide_technique_info_supp
         Else
-            lblCutanes.Text = "Non"
+            lblAideTechnique.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.protections_info_supp) Then
-            lblCutanes.Text = "Oui"
+        If (clsInfoSupp.protections_info_supp) Then
+            lblPortProtection.Text = "Oui"
         Else
-            lblCutanes.Text = "Non"
+            lblPortProtection.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.appareil_auditif_info_supp) Then
-            lblCutanes.Text = "Oui"
+        If (clsInfoSupp.appareil_auditif_info_supp) Then
+            lblAppareilAuditif.Text = "Oui"
         Else
-            lblCutanes.Text = "Non"
+            lblAppareilAuditif.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.protheses_dentaires_info_supp) Then
-            lblCutanes.Text = "Oui, "
-            lblCutanes.Text += clsInfoSupplementaire.p_protheses_dentaires_info_supp
+        If (clsInfoSupp.protheses_dentaires_info_supp) Then
+            lblProthesesDentaires.Text = "Oui, "
+            'lblProthesesDentaires.Text += clsInfoSupp.p_protheses_dentaires_info_supp
         Else
-            lblCutanes.Text = "Non"
+            lblProthesesDentaires.Text = "Non"
         End If
 
-        If (clsInfoSupplementaire.lunettes_info_supp) Then
-            lblCutanes.Text = "Oui"
+        If (clsInfoSupp.lunettes_info_supp) Then
+            lblLunettes.Text = "Oui"
         Else
-            lblCutanes.Text = "Non"
+            lblLunettes.Text = "Non"
         End If
 
     End Sub
