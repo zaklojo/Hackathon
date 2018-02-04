@@ -34,27 +34,28 @@ Partial Class controlGenerationCodeBarre
         'codeBarre
         '
         Me.codeBarre.BackColor = System.Drawing.Color.White
-        Me.codeBarre.Location = New System.Drawing.Point(197, 98)
+        Me.codeBarre.Location = New System.Drawing.Point(376, 129)
         Me.codeBarre.Name = "codeBarre"
-        Me.codeBarre.Size = New System.Drawing.Size(647, 133)
+        Me.codeBarre.Size = New System.Drawing.Size(366, 96)
         Me.codeBarre.TabIndex = 0
         Me.codeBarre.TabStop = False
         '
         'txtSaisie
         '
-        Me.txtSaisie.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSaisie.Location = New System.Drawing.Point(197, 288)
+        Me.txtSaisie.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSaisie.Location = New System.Drawing.Point(376, 299)
+        Me.txtSaisie.MaxLength = 12
         Me.txtSaisie.Name = "txtSaisie"
-        Me.txtSaisie.Size = New System.Drawing.Size(647, 62)
+        Me.txtSaisie.Size = New System.Drawing.Size(366, 47)
         Me.txtSaisie.TabIndex = 1
         Me.txtSaisie.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnGenererCode
         '
         Me.btnGenererCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGenererCode.Location = New System.Drawing.Point(197, 356)
+        Me.btnGenererCode.Location = New System.Drawing.Point(376, 367)
         Me.btnGenererCode.Name = "btnGenererCode"
-        Me.btnGenererCode.Size = New System.Drawing.Size(647, 62)
+        Me.btnGenererCode.Size = New System.Drawing.Size(366, 62)
         Me.btnGenererCode.TabIndex = 2
         Me.btnGenererCode.Text = "Générer le code"
         Me.btnGenererCode.UseVisualStyleBackColor = True
@@ -72,9 +73,9 @@ Partial Class controlGenerationCodeBarre
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lblIDCode)
-        Me.GroupBox1.Location = New System.Drawing.Point(197, 217)
+        Me.GroupBox1.Location = New System.Drawing.Point(376, 228)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(647, 65)
+        Me.GroupBox1.Size = New System.Drawing.Size(366, 65)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '

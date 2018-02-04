@@ -17,8 +17,8 @@ Public Class controlGenerationCodeBarre
 
     'Début de la génération du code62
     Private Sub btnGenererCode_Click(sender As Object, e As EventArgs) Handles btnGenererCode.Click
-        picBarcode.Image = Nothing
-        GenererBinaire(txtSaisie.Text)
+        clearCodeBarre()
+        GenererBinaire(txtSaisie.Text.Trim)
         GenererCodeBarre(Binaire)
         lblIDCode.Text = txtSaisie.Text
         txtSaisie.Clear()
@@ -551,7 +551,7 @@ Public Class controlGenerationCodeBarre
 
         Dim num As Integer = 0
         For Each one As String In saisie
-            num = num + 1
+            num = num + 2
         Next
 
         Dim rec As New Rectangle(1, 1, num, 100)
@@ -565,12 +565,12 @@ Public Class controlGenerationCodeBarre
         Dim ligneNoire As New Pen(Color.Black)
         Dim ligneBlanche As New Pen(Color.White)
 
-        ligneNoire.Width = 1
-        ligneBlanche.Width = 1
+        ligneNoire.Width = 2
+        ligneBlanche.Width = 2
 
 
         For Each element As String In saisie
-            count = count + 1
+            count = count + 2
 
             If element = 1 Then
                 codeBarre.CreateGraphics.DrawLine(ligneNoire, count, 1, count, length)
@@ -588,6 +588,12 @@ Public Class controlGenerationCodeBarre
 
     End Sub
 
+    'Permet de reset le code barre
+    Sub clearCodeBarre()
+        For ctr As Integer = 0 To 600
+            codeBarre.CreateGraphics.DrawLine(New Pen(Color.White), ctr, 1, ctr, 100)
+        Next
+    End Sub
 
 
 End Class
