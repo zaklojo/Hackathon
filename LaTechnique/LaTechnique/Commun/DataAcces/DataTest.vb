@@ -56,6 +56,7 @@
     Public Sub connexion(ByVal co As clsConnexion)
         bd.Requete($"select {constantes_connexion.STR_TYPE} from {constantes_connexion.STR_TABLE} where {constantes_connexion.STR_NOM_UTILISATEUR} = '{co.nom_utilisateur}' and {constantes_connexion.STR_MDP} = '{co.mdp}'", ds, da, constantes_infos_supplementaires.STR_TABLE)
 =======
+    End Sub
     Public Sub ressources(ByVal am As String)
         bd.Requete($"select * from {constantes_ressources.STR_TABLE} where {constantes_ressources.STR_ASSURANCE_MALADIE} = '{am}'", ds, da, constantes_ressources.STR_TABLE)
     End Sub

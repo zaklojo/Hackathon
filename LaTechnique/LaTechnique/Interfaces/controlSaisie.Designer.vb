@@ -319,6 +319,7 @@ Partial Class controlSaisie
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+>>>>>>> cc626eb43399553a4c8b430ac67dc37e93cc49c0
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
@@ -919,6 +920,10 @@ Partial Class controlSaisie
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+=======
+        Me.Label20.Location = New System.Drawing.Point(31, 2019)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+>>>>>>> cc626eb43399553a4c8b430ac67dc37e93cc49c0
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(520, 41)
         Me.Label20.TabIndex = 36
@@ -941,6 +946,8 @@ Partial Class controlSaisie
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label19.Location = New System.Drawing.Point(31, 1944)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(520, 41)
         Me.Label19.TabIndex = 35
@@ -963,6 +970,8 @@ Partial Class controlSaisie
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label18.Location = New System.Drawing.Point(31, 1869)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(520, 41)
         Me.Label18.TabIndex = 34
@@ -985,6 +994,8 @@ Partial Class controlSaisie
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label17.Location = New System.Drawing.Point(31, 1794)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(520, 41)
         Me.Label17.TabIndex = 33
@@ -1007,6 +1018,8 @@ Partial Class controlSaisie
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label16.Location = New System.Drawing.Point(31, 1719)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(520, 41)
         Me.Label16.TabIndex = 32
@@ -1029,6 +1042,8 @@ Partial Class controlSaisie
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label15.Location = New System.Drawing.Point(31, 1644)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(520, 41)
         Me.Label15.TabIndex = 31
@@ -1051,6 +1066,8 @@ Partial Class controlSaisie
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label13.Location = New System.Drawing.Point(31, 1494)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(520, 41)
         Me.Label13.TabIndex = 29
@@ -1073,6 +1090,8 @@ Partial Class controlSaisie
         Me.lblInfosSupp.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.lblInfosSupp.Location = New System.Drawing.Point(31, 1419)
+        Me.lblInfosSupp.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInfosSupp.Name = "lblInfosSupp"
         Me.lblInfosSupp.Size = New System.Drawing.Size(520, 41)
         Me.lblInfosSupp.TabIndex = 28
@@ -1094,6 +1113,8 @@ Partial Class controlSaisie
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label12.Location = New System.Drawing.Point(31, 1358)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(316, 26)
         Me.Label12.TabIndex = 23
@@ -1166,6 +1187,8 @@ Partial Class controlSaisie
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label7.Location = New System.Drawing.Point(31, 563)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(75, 26)
         Me.Label7.TabIndex = 7
@@ -1331,6 +1354,8 @@ Partial Class controlSaisie
         Me.lblPoids.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.lblPoids.Location = New System.Drawing.Point(456, 563)
+        Me.lblPoids.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPoids.Name = "lblPoids"
         Me.lblPoids.Size = New System.Drawing.Size(0, 26)
         Me.lblPoids.TabIndex = 13
@@ -1377,6 +1402,8 @@ Partial Class controlSaisie
         Me.lblTaille.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.lblTaille.Location = New System.Drawing.Point(269, 0)
+        Me.lblTaille.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTaille.Name = "lblTaille"
         Me.lblTaille.Size = New System.Drawing.Size(0, 26)
         Me.lblTaille.TabIndex = 14
@@ -1397,6 +1424,8 @@ Partial Class controlSaisie
         Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.Label24.Location = New System.Drawing.Point(269, 563)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(42, 26)
         Me.Label24.TabIndex = 64
@@ -1421,6 +1450,8 @@ Partial Class controlSaisie
         Me.grpAntecedentsMedicaux.Margin = New System.Windows.Forms.Padding(4)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.grpAntecedentsMedicaux.Location = New System.Drawing.Point(31, 731)
+        Me.grpAntecedentsMedicaux.Margin = New System.Windows.Forms.Padding(4)
         Me.grpAntecedentsMedicaux.Name = "grpAntecedentsMedicaux"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpAntecedentsMedicaux, 3)
         Me.grpAntecedentsMedicaux.Size = New System.Drawing.Size(464, 223)
@@ -1510,6 +1541,7 @@ Partial Class controlSaisie
         Me.chkLunettes.AutoSize = True
         Me.chkLunettes.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.chkLunettes.Location = New System.Drawing.Point(548, 1602)
         Me.chkLunettes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
 =======
@@ -1520,6 +1552,7 @@ Partial Class controlSaisie
         Me.chkLunettes.Location = New System.Drawing.Point(732, 2097)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkLunettes.Location = New System.Drawing.Point(732, 2097)
         Me.chkLunettes.Name = "chkLunettes"
         Me.chkLunettes.Size = New System.Drawing.Size(60, 30)
         Me.chkLunettes.TabIndex = 155
@@ -1541,6 +1574,7 @@ Partial Class controlSaisie
         Me.chkProtheses.Location = New System.Drawing.Point(732, 2022)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkProtheses.Location = New System.Drawing.Point(732, 2022)
         Me.chkProtheses.Name = "chkProtheses"
         Me.chkProtheses.Size = New System.Drawing.Size(60, 30)
         Me.chkProtheses.TabIndex = 154
@@ -1562,6 +1596,7 @@ Partial Class controlSaisie
         Me.chkAppareilAuditif.Location = New System.Drawing.Point(732, 1947)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkAppareilAuditif.Location = New System.Drawing.Point(732, 1947)
         Me.chkAppareilAuditif.Name = "chkAppareilAuditif"
         Me.chkAppareilAuditif.Size = New System.Drawing.Size(60, 30)
         Me.chkAppareilAuditif.TabIndex = 153
@@ -1573,6 +1608,7 @@ Partial Class controlSaisie
         Me.chkProtection.AutoSize = True
         Me.chkProtection.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 <<<<<<< HEAD
+<<<<<<< HEAD
         Me.chkProtection.Location = New System.Drawing.Point(548, 1419)
         Me.chkProtection.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
 =======
@@ -1583,6 +1619,7 @@ Partial Class controlSaisie
         Me.chkProtection.Location = New System.Drawing.Point(732, 1872)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkProtection.Location = New System.Drawing.Point(732, 1872)
         Me.chkProtection.Name = "chkProtection"
         Me.chkProtection.Size = New System.Drawing.Size(60, 30)
         Me.chkProtection.TabIndex = 152
@@ -1604,6 +1641,7 @@ Partial Class controlSaisie
         Me.chkAideTechnique.Location = New System.Drawing.Point(732, 1797)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkAideTechnique.Location = New System.Drawing.Point(732, 1797)
         Me.chkAideTechnique.Name = "chkAideTechnique"
         Me.chkAideTechnique.Size = New System.Drawing.Size(60, 30)
         Me.chkAideTechnique.TabIndex = 151
@@ -1625,6 +1663,7 @@ Partial Class controlSaisie
         Me.chkCutane.Location = New System.Drawing.Point(732, 1722)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkCutane.Location = New System.Drawing.Point(732, 1722)
         Me.chkCutane.Name = "chkCutane"
         Me.chkCutane.Size = New System.Drawing.Size(60, 30)
         Me.chkCutane.TabIndex = 150
@@ -1646,6 +1685,7 @@ Partial Class controlSaisie
         Me.chkContention.Location = New System.Drawing.Point(732, 1647)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkContention.Location = New System.Drawing.Point(732, 1647)
         Me.chkContention.Name = "chkContention"
         Me.chkContention.Size = New System.Drawing.Size(60, 30)
         Me.chkContention.TabIndex = 149
@@ -1667,6 +1707,7 @@ Partial Class controlSaisie
         Me.chkFugue.Location = New System.Drawing.Point(732, 1572)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkFugue.Location = New System.Drawing.Point(732, 1572)
         Me.chkFugue.Name = "chkFugue"
         Me.chkFugue.Size = New System.Drawing.Size(60, 30)
         Me.chkFugue.TabIndex = 148
@@ -1688,6 +1729,7 @@ Partial Class controlSaisie
         Me.chkDesorientation.Location = New System.Drawing.Point(732, 1497)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkDesorientation.Location = New System.Drawing.Point(732, 1497)
         Me.chkDesorientation.Name = "chkDesorientation"
         Me.chkDesorientation.Size = New System.Drawing.Size(60, 30)
         Me.chkDesorientation.TabIndex = 147
@@ -1709,6 +1751,7 @@ Partial Class controlSaisie
         Me.chkComportement.Location = New System.Drawing.Point(732, 1422)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkComportement.Location = New System.Drawing.Point(732, 1422)
         Me.chkComportement.Name = "chkComportement"
         Me.chkComportement.Size = New System.Drawing.Size(60, 30)
         Me.chkComportement.TabIndex = 146
@@ -1733,6 +1776,8 @@ Partial Class controlSaisie
         Me.grpAntecedentsChirurgicaux.Margin = New System.Windows.Forms.Padding(4)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.grpAntecedentsChirurgicaux.Location = New System.Drawing.Point(733, 731)
+        Me.grpAntecedentsChirurgicaux.Margin = New System.Windows.Forms.Padding(4)
         Me.grpAntecedentsChirurgicaux.Name = "grpAntecedentsChirurgicaux"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpAntecedentsChirurgicaux, 3)
         Me.grpAntecedentsChirurgicaux.Size = New System.Drawing.Size(414, 223)
@@ -1835,6 +1880,8 @@ Partial Class controlSaisie
         Me.grpAllergies.Margin = New System.Windows.Forms.Padding(4)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.grpAllergies.Location = New System.Drawing.Point(733, 1047)
+        Me.grpAllergies.Margin = New System.Windows.Forms.Padding(4)
         Me.grpAllergies.Name = "grpAllergies"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpAllergies, 5)
         Me.grpAllergies.Size = New System.Drawing.Size(414, 226)
@@ -1934,6 +1981,7 @@ Partial Class controlSaisie
         Me.txtComportement.Location = New System.Drawing.Point(962, 1422)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.txtComportement.Location = New System.Drawing.Point(962, 1422)
         Me.txtComportement.Name = "txtComportement"
         Me.txtComportement.Size = New System.Drawing.Size(229, 32)
         Me.txtComportement.TabIndex = 156
@@ -1953,6 +2001,7 @@ Partial Class controlSaisie
         Me.lblComportement.Location = New System.Drawing.Point(818, 1419)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.lblComportement.Location = New System.Drawing.Point(818, 1419)
         Me.lblComportement.Name = "lblComportement"
         Me.lblComportement.Size = New System.Drawing.Size(102, 41)
         Me.lblComportement.TabIndex = 157
@@ -1973,6 +2022,7 @@ Partial Class controlSaisie
         Me.lblContention.Location = New System.Drawing.Point(818, 1644)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.lblContention.Location = New System.Drawing.Point(818, 1644)
         Me.lblContention.Name = "lblContention"
         Me.lblContention.Size = New System.Drawing.Size(102, 41)
         Me.lblContention.TabIndex = 159
@@ -1993,6 +2043,7 @@ Partial Class controlSaisie
         Me.txtContention.Location = New System.Drawing.Point(962, 1647)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.txtContention.Location = New System.Drawing.Point(962, 1647)
         Me.txtContention.Name = "txtContention"
         Me.txtContention.Size = New System.Drawing.Size(229, 32)
         Me.txtContention.TabIndex = 158
@@ -2012,6 +2063,7 @@ Partial Class controlSaisie
         Me.chkBas.Location = New System.Drawing.Point(818, 2022)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkBas.Location = New System.Drawing.Point(818, 2022)
         Me.chkBas.Name = "chkBas"
         Me.chkBas.Size = New System.Drawing.Size(100, 30)
         Me.chkBas.TabIndex = 160
@@ -2034,6 +2086,7 @@ Partial Class controlSaisie
         Me.chkHaut.Location = New System.Drawing.Point(962, 2022)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkHaut.Location = New System.Drawing.Point(962, 2022)
         Me.chkHaut.Name = "chkHaut"
         Me.chkHaut.Size = New System.Drawing.Size(107, 30)
         Me.chkHaut.TabIndex = 161
@@ -2056,6 +2109,7 @@ Partial Class controlSaisie
         Me.chkDeux.Location = New System.Drawing.Point(1112, 2022)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.chkDeux.Location = New System.Drawing.Point(1112, 2022)
         Me.chkDeux.Name = "chkDeux"
         Me.chkDeux.Size = New System.Drawing.Size(119, 30)
         Me.chkDeux.TabIndex = 162
@@ -2077,6 +2131,7 @@ Partial Class controlSaisie
         Me.lblAideTechnique.Location = New System.Drawing.Point(818, 1794)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.lblAideTechnique.Location = New System.Drawing.Point(818, 1794)
         Me.lblAideTechnique.Name = "lblAideTechnique"
         Me.lblAideTechnique.Size = New System.Drawing.Size(102, 41)
         Me.lblAideTechnique.TabIndex = 164
@@ -2097,6 +2152,7 @@ Partial Class controlSaisie
         Me.txtAideTechnique.Location = New System.Drawing.Point(962, 1797)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.txtAideTechnique.Location = New System.Drawing.Point(962, 1797)
         Me.txtAideTechnique.Name = "txtAideTechnique"
         Me.txtAideTechnique.Size = New System.Drawing.Size(229, 32)
         Me.txtAideTechnique.TabIndex = 163
@@ -2119,6 +2175,8 @@ Partial Class controlSaisie
         Me.grpMedicaments.Margin = New System.Windows.Forms.Padding(4)
 >>>>>>> origin/Interfaces
 >>>>>>> e767f810d994d1c169d9b9f87ebea1d1897eadcf
+        Me.grpMedicaments.Location = New System.Drawing.Point(733, 2181)
+        Me.grpMedicaments.Margin = New System.Windows.Forms.Padding(4)
         Me.grpMedicaments.Name = "grpMedicaments"
         Me.TableLayoutPanel1.SetRowSpan(Me.grpMedicaments, 5)
         Me.grpMedicaments.Size = New System.Drawing.Size(414, 226)

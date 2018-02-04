@@ -9,6 +9,7 @@
         Form1.control_co.Dock = DockStyle.Fill
         Me.Visible = False
 =======
+    End Sub
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Visible = False
         Form1.control_generationcode.Dock = DockStyle.Fill
