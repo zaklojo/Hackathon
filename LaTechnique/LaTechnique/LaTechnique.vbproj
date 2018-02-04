@@ -147,6 +147,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaces\controlGenerationCodeBarre.Designer.vb">
+      <DependentUpon>controlGenerationCodeBarre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\controlGenerationCodeBarre.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Interfaces\controlIdentification.Designer.vb">
       <DependentUpon>controlIdentification.vb</DependentUpon>
     </Compile>
@@ -178,6 +184,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\controlGenerationCodeBarre.resx">
+      <DependentUpon>controlGenerationCodeBarre.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\controlIdentification.resx">
       <DependentUpon>controlIdentification.vb</DependentUpon>

@@ -537,7 +537,7 @@ Partial Class controlVisionnement
         'lblAntecedentsPsychiatriques
         '
         Me.lblAntecedentsPsychiatriques.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsPsychiatriques, 6)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsPsychiatriques, 12)
         Me.lblAntecedentsPsychiatriques.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAntecedentsPsychiatriques.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.lblAntecedentsPsychiatriques.Location = New System.Drawing.Point(23, 790)
@@ -561,7 +561,7 @@ Partial Class controlVisionnement
         'lblAntecedentsChirurgicaux
         '
         Me.lblAntecedentsChirurgicaux.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsChirurgicaux, 6)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsChirurgicaux, 12)
         Me.lblAntecedentsChirurgicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAntecedentsChirurgicaux.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.lblAntecedentsChirurgicaux.Location = New System.Drawing.Point(23, 690)
@@ -585,7 +585,7 @@ Partial Class controlVisionnement
         'lblAntecedentsMedicaux
         '
         Me.lblAntecedentsMedicaux.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsMedicaux, 2)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsMedicaux, 12)
         Me.lblAntecedentsMedicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAntecedentsMedicaux.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.lblAntecedentsMedicaux.Location = New System.Drawing.Point(23, 590)
@@ -643,7 +643,7 @@ Partial Class controlVisionnement
         'lblDossierHopital
         '
         Me.lblDossierHopital.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblDossierHopital, 2)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblDossierHopital, 3)
         Me.lblDossierHopital.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDossierHopital.Location = New System.Drawing.Point(201, 320)
         Me.lblDossierHopital.Name = "lblDossierHopital"
@@ -654,7 +654,7 @@ Partial Class controlVisionnement
         'lblAssuranceMaladie
         '
         Me.lblAssuranceMaladie.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAssuranceMaladie, 2)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAssuranceMaladie, 3)
         Me.lblAssuranceMaladie.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAssuranceMaladie.Location = New System.Drawing.Point(261, 270)
         Me.lblAssuranceMaladie.Name = "lblAssuranceMaladie"
@@ -760,7 +760,7 @@ Partial Class controlVisionnement
         'lblNom
         '
         Me.lblNom.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblNom, 2)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblNom, 5)
         Me.lblNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNom.Location = New System.Drawing.Point(103, 120)
         Me.lblNom.Name = "lblNom"
@@ -783,7 +783,7 @@ Partial Class controlVisionnement
         'lblPrenom
         '
         Me.lblPrenom.AutoSize = True
-        Me.TableLayoutPanel1.SetColumnSpan(Me.lblPrenom, 2)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblPrenom, 4)
         Me.lblPrenom.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPrenom.Location = New System.Drawing.Point(141, 170)
         Me.lblPrenom.Name = "lblPrenom"

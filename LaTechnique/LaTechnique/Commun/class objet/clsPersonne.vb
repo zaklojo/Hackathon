@@ -147,6 +147,7 @@
         With dataAccess.ds
             assurance_maladie = verifierColonneDataSet(.Tables(0), ligne, constantes_personnes.STR_ASSURANCE_MALADIE)
             nom = verifierColonneDataSet(.Tables(0), ligne, constantes_personnes.STR_NOM)
+            prenom = verifierColonneDataSet(.Tables(0), ligne, constantes_personnes.STR_PRENOM)
             date_naissance = verifierColonneDataSet(.Tables(0), ligne, constantes_personnes.STR_DATE_NAISSANCE)
             date_pesee = verifierColonneDataSet(.Tables(0), ligne, constantes_personnes.STR_DATE_PESEE)
             dossier_hopital = verifierColonneDataSet(.Tables(0), ligne, constantes_personnes.STR_DOSSIER_HOPITAL)
