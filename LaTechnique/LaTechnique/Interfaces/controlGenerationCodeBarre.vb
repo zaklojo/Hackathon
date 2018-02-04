@@ -22,6 +22,7 @@ Public Class controlGenerationCodeBarre
         GenererCodeBarre(Binaire)
         lblIDCode.Text = txtSaisie.Text
         txtSaisie.Clear()
+        btnSave.Visible = True
     End Sub
 
     'Conversion des caractères en binaire
@@ -585,7 +586,6 @@ Public Class controlGenerationCodeBarre
         codeBarre.DrawToBitmap(img, rec)
 
         PDF = img 'Impression en PDF éventuelle
-
     End Sub
 
     'Permet de reset le code barre
@@ -595,5 +595,27 @@ Public Class controlGenerationCodeBarre
         Next
     End Sub
 
+    Private Sub PrintImage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles printDoc.PrintPage
+        e.Graphics.DrawImage(getBitmap(codeBarre), e.MarginBounds.Left, e.MarginBounds.Top)
+    End Sub
 
+    'Fonction utilisée pour prendre un screenshot du composant codeBarre. Un screenshot est utilisé pour éviter de perdre les informations des lignes ajoutés par dessus le contrôle
+    Private Function getBitmap(ByVal pCtrl As Control) As Drawing.Bitmap
+        Dim ScreenPos As Point = Me.PointToScreen(New Point(0, 0))
+        Dim myBmp As New Bitmap(pCtrl.Width, pCtrl.Height)
+        Dim g As Graphics = Graphics.FromImage(myBmp)
+        Dim pOffset As New Point(pCtrl.Parent.Width - pCtrl.Parent.ClientRectangle.Width - 4, pCtrl.Parent.Height - pCtrl.Parent.ClientRectangle.Height - 4)
+        g.CopyFromScreen(ScreenPos + pCtrl.Parent.Location + pCtrl.Location + pOffset, Point.Empty, myBmp.Size)
+        Return myBmp
+        g.Dispose()
+    End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
+        printDoc.Print()
+    End Sub
+
+    Private Sub controlGenerationCodeBarre_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnSave.Visible = False
+    End Sub
 End Class

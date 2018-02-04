@@ -22,11 +22,13 @@ Partial Class controlGenerationCodeBarre
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(controlGenerationCodeBarre))
         Me.codeBarre = New System.Windows.Forms.PictureBox()
         Me.txtSaisie = New System.Windows.Forms.TextBox()
         Me.btnGenererCode = New System.Windows.Forms.Button()
         Me.lblIDCode = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnSave = New System.Windows.Forms.Button()
         CType(Me.codeBarre, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -34,7 +36,7 @@ Partial Class controlGenerationCodeBarre
         'codeBarre
         '
         Me.codeBarre.BackColor = System.Drawing.Color.White
-        Me.codeBarre.Location = New System.Drawing.Point(376, 129)
+        Me.codeBarre.Location = New System.Drawing.Point(400, 129)
         Me.codeBarre.Name = "codeBarre"
         Me.codeBarre.Size = New System.Drawing.Size(366, 96)
         Me.codeBarre.TabIndex = 0
@@ -43,7 +45,7 @@ Partial Class controlGenerationCodeBarre
         'txtSaisie
         '
         Me.txtSaisie.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSaisie.Location = New System.Drawing.Point(376, 299)
+        Me.txtSaisie.Location = New System.Drawing.Point(400, 299)
         Me.txtSaisie.MaxLength = 12
         Me.txtSaisie.Name = "txtSaisie"
         Me.txtSaisie.Size = New System.Drawing.Size(366, 47)
@@ -53,7 +55,7 @@ Partial Class controlGenerationCodeBarre
         'btnGenererCode
         '
         Me.btnGenererCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGenererCode.Location = New System.Drawing.Point(376, 367)
+        Me.btnGenererCode.Location = New System.Drawing.Point(400, 367)
         Me.btnGenererCode.Name = "btnGenererCode"
         Me.btnGenererCode.Size = New System.Drawing.Size(366, 62)
         Me.btnGenererCode.TabIndex = 2
@@ -73,16 +75,28 @@ Partial Class controlGenerationCodeBarre
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lblIDCode)
-        Me.GroupBox1.Location = New System.Drawing.Point(376, 228)
+        Me.GroupBox1.Location = New System.Drawing.Point(400, 228)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(366, 65)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '
+        'btnSave
+        '
+        Me.btnSave.BackgroundImage = CType(resources.GetObject("btnSave.BackgroundImage"), System.Drawing.Image)
+        Me.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSave.Location = New System.Drawing.Point(769, 129)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(41, 43)
+        Me.btnSave.TabIndex = 6
+        Me.btnSave.UseVisualStyleBackColor = True
+        Me.btnSave.Visible = False
+        '
         'controlGenerationCodeBarre
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnGenererCode)
         Me.Controls.Add(Me.txtSaisie)
@@ -102,4 +116,5 @@ Partial Class controlGenerationCodeBarre
     Friend WithEvents btnGenererCode As Button
     Friend WithEvents lblIDCode As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnSave As Button
 End Class
