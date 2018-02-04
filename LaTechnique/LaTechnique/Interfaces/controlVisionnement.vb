@@ -243,7 +243,7 @@ Public Class controlVisionnement
             lblPersonneContact.Text = "Aucune personne à contacter connue"
         End If
 
-
+        bd = New DataTest
     End Sub
 
 End Class
