@@ -134,6 +134,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Interfaces\controlIdentification.Designer.vb">
+      <DependentUpon>controlIdentification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\controlIdentification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\controlVisionnement.Designer.vb">
+      <DependentUpon>controlVisionnement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\controlVisionnement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -153,6 +165,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\controlIdentification.resx">
+      <DependentUpon>controlIdentification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\controlVisionnement.resx">
+      <DependentUpon>controlVisionnement.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
