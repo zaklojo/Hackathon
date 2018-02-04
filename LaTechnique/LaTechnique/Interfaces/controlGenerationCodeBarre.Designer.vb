@@ -70,6 +70,7 @@ Partial Class controlGenerationCodeBarre
         Me.lblIDCode.Location = New System.Drawing.Point(3, 16)
         Me.lblIDCode.Name = "lblIDCode"
         Me.lblIDCode.Size = New System.Drawing.Size(0, 39)
+        Me.lblIDCode.Size = New System.Drawing.Size(0, 52)
         Me.lblIDCode.TabIndex = 4
         '
         'GroupBox1

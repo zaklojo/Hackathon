@@ -4,8 +4,6 @@
     Private v_id_ressource As Integer
     Private v_assurance_maladie As String
     Private v_nom As String
-    Private v_lien As Integer
-    Private v_prenom As Integer
     Private v_priorite As Integer
 
     'Propriétés

@@ -30,16 +30,14 @@ Partial Class Form1
         Me.pControl.AutoSize = True
         Me.pControl.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pControl.Location = New System.Drawing.Point(0, 0)
+        Me.pControl.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pControl.Name = "pControl"
-        Me.pControl.Size = New System.Drawing.Size(1156, 632)
         Me.pControl.TabIndex = 0
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(1156, 632)
         Me.Controls.Add(Me.pControl)
         Me.Name = "Form1"
         Me.Text = "La technique - Application"

@@ -3,7 +3,6 @@ Imports System.Text.RegularExpressions
 Public Class Form1
 
     Public control_identif As New controlIdentification
-    Dim control_visionnement As New controlVisionnement
 
     Dim access As New DataTest
     Dim clsPers As New clsPersonne
@@ -17,15 +16,13 @@ Public Class Form1
         pControl.Controls.Add(control_identif)
         pControl.Controls.Add(control_visionnement)
         'Fait afficher le controle de base
-        control_saisie.Dock = DockStyle.Fill
-        control_identif.Visible = False
         control_visionnement.Visible = False
-        control_saisie.Visible = True
         'control_saisie.Dock = DockStyle.Fill
         'control_identif.Visible = False
         'control_visionnement.Dock = DockStyle.Fill
         'control_visionnement.Visible = True
         'control_saisie.initialiser()
+
 
 
     End Sub
