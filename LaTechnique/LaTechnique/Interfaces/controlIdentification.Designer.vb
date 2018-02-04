@@ -66,7 +66,7 @@ Partial Class controlIdentification
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(210, 54)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Se connecter"
+        Me.Button1.Text = "Se déconnecter"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2

@@ -2,9 +2,10 @@
 Imports System.Text.RegularExpressions
 Public Class Form1
 
+    Public control_co As New controlconnexion
     Public control_identif As New controlIdentification
-    Dim control_visionnement As New controlVisionnement
-    'Dim control_saisie As New controlSaisie
+    Public control_visionnement As New controlVisionnement
+    Public control_saisie As New controlSaisie
 
     Dim access As New DataTest
     Dim clsPers As New clsPersonne
@@ -15,9 +16,11 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Rajoute les controles
+        pControl.Controls.Add(control_co)
         pControl.Controls.Add(control_identif)
         pControl.Controls.Add(control_visionnement)
-        'pControl.Controls.Add(control_saisie)
+        pControl.Controls.Add(control_saisie)
+        control_saisie.Visible = False
         'Fait afficher le controle de base
         'control_saisie.Dock = DockStyle.Fill
         'control_identif.Visible = False
@@ -27,9 +30,10 @@ Public Class Form1
         'control_visionnement.Dock = DockStyle.Fill
         'control_visionnement.Visible = True
         'control_saisie.initialiser()
-
-        control_identif.Visible = True
-        control_identif.Dock = DockStyle.Fill
+        control_visionnement.Visible = False
+        control_identif.Visible = False
+        control_co.Visible = True
+        control_co.Dock = DockStyle.Fill
 
     End Sub
     Public Function identification()
