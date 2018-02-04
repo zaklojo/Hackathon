@@ -17,7 +17,7 @@ Public Class controlGenerationCodeBarre
 
     'Début de la génération du code62
     Private Sub btnGenererCode_Click(sender As Object, e As EventArgs) Handles btnGenererCode.Click
-        codeBarre.BackColor = Color.White
+        picBarcode.Image = Nothing
         GenererBinaire(txtSaisie.Text)
         GenererCodeBarre(Binaire)
         lblIDCode.Text = txtSaisie.Text
