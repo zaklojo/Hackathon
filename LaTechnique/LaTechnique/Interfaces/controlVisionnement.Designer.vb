@@ -1,0 +1,449 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class controlVisionnement
+    Inherits System.Windows.Forms.UserControl
+
+    'UserControl overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblTaille = New System.Windows.Forms.Label()
+        Me.lblPoids = New System.Windows.Forms.Label()
+        Me.lblDossierHopital = New System.Windows.Forms.Label()
+        Me.lblAssuranceMaladie = New System.Windows.Forms.Label()
+        Me.lblDateNaissance = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblNom = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblPrenom = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lblAntecedentsMedicaux = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblAntecedentsChirurgicaux = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.lblAntecedentsPsychiatriques = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblAllergies = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 20
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.lblAllergies, 8, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label12, 0, 18)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblAntecedentsPsychiatriques, 1, 17)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label11, 1, 16)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblAntecedentsChirurgicaux, 1, 15)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label10, 1, 14)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblAntecedentsMedicaux, 1, 13)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label9, 1, 12)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label8, 8, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblTaille, 3, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblPoids, 3, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblDossierHopital, 4, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblAssuranceMaladie, 5, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblDateNaissance, 5, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.Button1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label5, 1, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label3, 1, 6)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 1, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label6, 1, 9)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label7, 1, 10)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblNom, 2, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 1, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.lblPrenom, 3, 4)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 25
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1021, 1200)
+        Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label8, 2)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(495, 220)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(108, 26)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "Allergies :"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        '
+        'lblTaille
+        '
+        Me.lblTaille.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblTaille, 2)
+        Me.lblTaille.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTaille.Location = New System.Drawing.Point(141, 440)
+        Me.lblTaille.Name = "lblTaille"
+        Me.lblTaille.Size = New System.Drawing.Size(0, 26)
+        Me.lblTaille.TabIndex = 14
+        Me.lblTaille.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblPoids
+        '
+        Me.lblPoids.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblPoids, 2)
+        Me.lblPoids.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPoids.Location = New System.Drawing.Point(141, 390)
+        Me.lblPoids.Name = "lblPoids"
+        Me.lblPoids.Size = New System.Drawing.Size(0, 26)
+        Me.lblPoids.TabIndex = 13
+        Me.lblPoids.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblDossierHopital
+        '
+        Me.lblDossierHopital.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblDossierHopital, 2)
+        Me.lblDossierHopital.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDossierHopital.Location = New System.Drawing.Point(200, 320)
+        Me.lblDossierHopital.Name = "lblDossierHopital"
+        Me.lblDossierHopital.Size = New System.Drawing.Size(0, 26)
+        Me.lblDossierHopital.TabIndex = 12
+        Me.lblDossierHopital.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblAssuranceMaladie
+        '
+        Me.lblAssuranceMaladie.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAssuranceMaladie, 2)
+        Me.lblAssuranceMaladie.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAssuranceMaladie.Location = New System.Drawing.Point(244, 270)
+        Me.lblAssuranceMaladie.Name = "lblAssuranceMaladie"
+        Me.lblAssuranceMaladie.Size = New System.Drawing.Size(0, 26)
+        Me.lblAssuranceMaladie.TabIndex = 11
+        Me.lblAssuranceMaladie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblDateNaissance
+        '
+        Me.lblDateNaissance.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblDateNaissance, 2)
+        Me.lblDateNaissance.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDateNaissance.Location = New System.Drawing.Point(244, 220)
+        Me.lblDateNaissance.Name = "lblDateNaissance"
+        Me.lblDateNaissance.Size = New System.Drawing.Size(0, 26)
+        Me.lblDateNaissance.TabIndex = 10
+        Me.lblDateNaissance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Button1
+        '
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Button1, 4)
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(3, 3)
+        Me.Button1.Name = "Button1"
+        Me.TableLayoutPanel1.SetRowSpan(Me.Button1, 2)
+        Me.Button1.Size = New System.Drawing.Size(191, 64)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Quitter"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label5, 4)
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(23, 220)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(204, 26)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "Date de naissance :"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label3, 4)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(23, 270)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(210, 26)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Assurance maladie :"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label4, 3)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(23, 320)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(168, 26)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Dossier hôpital :"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label6, 2)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(23, 390)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(79, 26)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = "Poids :"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label7, 2)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(23, 440)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(75, 26)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "Taille :"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(23, 120)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(71, 26)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Nom :"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblNom
+        '
+        Me.lblNom.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblNom, 2)
+        Me.lblNom.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNom.Location = New System.Drawing.Point(103, 120)
+        Me.lblNom.Name = "lblNom"
+        Me.lblNom.Size = New System.Drawing.Size(0, 26)
+        Me.lblNom.TabIndex = 8
+        Me.lblNom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label2, 2)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(23, 170)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(101, 26)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Prénom :"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lblPrenom
+        '
+        Me.lblPrenom.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblPrenom, 2)
+        Me.lblPrenom.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrenom.Location = New System.Drawing.Point(141, 170)
+        Me.lblPrenom.Name = "lblPrenom"
+        Me.lblPrenom.Size = New System.Drawing.Size(0, 26)
+        Me.lblPrenom.TabIndex = 9
+        Me.lblPrenom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label9, 6)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(23, 540)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(245, 26)
+        Me.Label9.TabIndex = 17
+        Me.Label9.Text = "Antécédents médicaux :"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblAntecedentsMedicaux
+        '
+        Me.lblAntecedentsMedicaux.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsMedicaux, 2)
+        Me.lblAntecedentsMedicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAntecedentsMedicaux.Location = New System.Drawing.Point(23, 590)
+        Me.lblAntecedentsMedicaux.Name = "lblAntecedentsMedicaux"
+        Me.lblAntecedentsMedicaux.Size = New System.Drawing.Size(0, 26)
+        Me.lblAntecedentsMedicaux.TabIndex = 18
+        Me.lblAntecedentsMedicaux.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label10, 6)
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(23, 640)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(268, 26)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "Antécédents chirurgicaux :"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblAntecedentsChirurgicaux
+        '
+        Me.lblAntecedentsChirurgicaux.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsChirurgicaux, 6)
+        Me.lblAntecedentsChirurgicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAntecedentsChirurgicaux.Location = New System.Drawing.Point(23, 690)
+        Me.lblAntecedentsChirurgicaux.Name = "lblAntecedentsChirurgicaux"
+        Me.lblAntecedentsChirurgicaux.Size = New System.Drawing.Size(0, 26)
+        Me.lblAntecedentsChirurgicaux.TabIndex = 20
+        Me.lblAntecedentsChirurgicaux.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label11, 6)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(23, 740)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(273, 26)
+        Me.Label11.TabIndex = 21
+        Me.Label11.Text = "Antécédents psychiatraux :"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblAntecedentsPsychiatriques
+        '
+        Me.lblAntecedentsPsychiatriques.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsPsychiatriques, 6)
+        Me.lblAntecedentsPsychiatriques.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAntecedentsPsychiatriques.Location = New System.Drawing.Point(23, 790)
+        Me.lblAntecedentsPsychiatriques.Name = "lblAntecedentsPsychiatriques"
+        Me.lblAntecedentsPsychiatriques.Size = New System.Drawing.Size(0, 26)
+        Me.lblAntecedentsPsychiatriques.TabIndex = 22
+        Me.lblAntecedentsPsychiatriques.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label12, 6)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(3, 840)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(273, 26)
+        Me.Label12.TabIndex = 23
+        Me.Label12.Text = "Antécédents psychiatraux :"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblAllergies
+        '
+        Me.lblAllergies.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblAllergies, 12)
+        Me.lblAllergies.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAllergies.Location = New System.Drawing.Point(495, 270)
+        Me.lblAllergies.Name = "lblAllergies"
+        Me.TableLayoutPanel1.SetRowSpan(Me.lblAllergies, 3)
+        Me.lblAllergies.Size = New System.Drawing.Size(0, 26)
+        Me.lblAllergies.TabIndex = 24
+        Me.lblAllergies.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        '
+        'controlVisionnement
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Name = "controlVisionnement"
+        Me.Size = New System.Drawing.Size(1021, 1200)
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
+        Me.ResumeLayout(False)
+
+    End Sub
+
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblNom As Label
+    Friend WithEvents lblTaille As Label
+    Friend WithEvents lblPoids As Label
+    Friend WithEvents lblDossierHopital As Label
+    Friend WithEvents lblAssuranceMaladie As Label
+    Friend WithEvents lblDateNaissance As Label
+    Friend WithEvents lblPrenom As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents lblAllergies As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents lblAntecedentsPsychiatriques As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents lblAntecedentsChirurgicaux As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents lblAntecedentsMedicaux As Label
+    Friend WithEvents Label9 As Label
+End Class
