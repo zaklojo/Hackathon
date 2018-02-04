@@ -24,6 +24,8 @@ Partial Class controlVisionnement
     Private Sub InitializeComponent()
         Dim Label14 As System.Windows.Forms.Label
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.lblPersonneContact = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
         Me.lblLunettes = New System.Windows.Forms.Label()
         Me.lblProthesesDentaires = New System.Windows.Forms.Label()
         Me.lblPortProtection = New System.Windows.Forms.Label()
@@ -113,6 +115,8 @@ Partial Class controlVisionnement
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.Controls.Add(Me.lblPersonneContact, 1, 43)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label22, 1, 41)
         Me.TableLayoutPanel1.Controls.Add(Me.lblLunettes, 4, 38)
         Me.TableLayoutPanel1.Controls.Add(Me.lblProthesesDentaires, 4, 36)
         Me.TableLayoutPanel1.Controls.Add(Me.lblPortProtection, 4, 32)
@@ -163,7 +167,7 @@ Partial Class controlVisionnement
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 54
+        Me.TableLayoutPanel1.RowCount = 45
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
@@ -206,6 +210,9 @@ Partial Class controlVisionnement
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 283.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -215,11 +222,33 @@ Partial Class controlVisionnement
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1021, 2000)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1021, 1800)
         Me.TableLayoutPanel1.TabIndex = 0
+        '
+        'lblPersonneContact
+        '
+        Me.lblPersonneContact.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.lblPersonneContact, 9)
+        Me.lblPersonneContact.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPersonneContact.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPersonneContact.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.lblPersonneContact.Location = New System.Drawing.Point(23, 1594)
+        Me.lblPersonneContact.Name = "lblPersonneContact"
+        Me.lblPersonneContact.Size = New System.Drawing.Size(679, 283)
+        Me.lblPersonneContact.TabIndex = 50
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.TableLayoutPanel1.SetColumnSpan(Me.Label22, 8)
+        Me.Label22.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(23, 1520)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(552, 52)
+        Me.Label22.TabIndex = 49
+        Me.Label22.Text = "Personnes à contacter :"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblLunettes
         '
@@ -510,6 +539,7 @@ Partial Class controlVisionnement
         Me.lblAntecedentsPsychiatriques.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsPsychiatriques, 6)
         Me.lblAntecedentsPsychiatriques.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAntecedentsPsychiatriques.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.lblAntecedentsPsychiatriques.Location = New System.Drawing.Point(23, 790)
         Me.lblAntecedentsPsychiatriques.Name = "lblAntecedentsPsychiatriques"
         Me.lblAntecedentsPsychiatriques.Size = New System.Drawing.Size(0, 26)
@@ -533,6 +563,7 @@ Partial Class controlVisionnement
         Me.lblAntecedentsChirurgicaux.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsChirurgicaux, 6)
         Me.lblAntecedentsChirurgicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAntecedentsChirurgicaux.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.lblAntecedentsChirurgicaux.Location = New System.Drawing.Point(23, 690)
         Me.lblAntecedentsChirurgicaux.Name = "lblAntecedentsChirurgicaux"
         Me.lblAntecedentsChirurgicaux.Size = New System.Drawing.Size(0, 26)
@@ -556,6 +587,7 @@ Partial Class controlVisionnement
         Me.lblAntecedentsMedicaux.AutoSize = True
         Me.TableLayoutPanel1.SetColumnSpan(Me.lblAntecedentsMedicaux, 2)
         Me.lblAntecedentsMedicaux.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAntecedentsMedicaux.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.lblAntecedentsMedicaux.Location = New System.Drawing.Point(23, 590)
         Me.lblAntecedentsMedicaux.Name = "lblAntecedentsMedicaux"
         Me.lblAntecedentsMedicaux.Size = New System.Drawing.Size(0, 26)
@@ -776,7 +808,7 @@ Partial Class controlVisionnement
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "controlVisionnement"
-        Me.Size = New System.Drawing.Size(1021, 2000)
+        Me.Size = New System.Drawing.Size(1021, 1800)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         CType(Me.pbPhoto, System.ComponentModel.ISupportInitialize).EndInit()
@@ -831,4 +863,6 @@ Partial Class controlVisionnement
     Friend WithEvents lblRisqueFugue As Label
     Friend WithEvents lblDesorientation As Label
     Friend WithEvents lblTroubleComportement As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents lblPersonneContact As Label
 End Class
